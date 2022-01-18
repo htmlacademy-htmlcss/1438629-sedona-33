@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Озеев](https://up.htmlacademy.ru/htmlcss/33/user/1438629).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Соколов](https://htmlacademy.ru/profile/k_sokolov).
 
 ---
 
