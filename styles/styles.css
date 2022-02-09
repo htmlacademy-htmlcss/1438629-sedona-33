@@ -19,6 +19,12 @@ body {
     background-color: #FFFFFF;
     color: black;
 }
+.navigation-link {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
 .button {
     font-family: inherit;
     font-size: 16px;
@@ -37,11 +43,6 @@ body {
 }
 .navigation-list-item {
     list-style-type: none;
-}
-.navigation-link {
-    color: black;
-    text-decoration: none;
-    text-align: center;
 }
 
 .main-promo-first {
