@@ -188,6 +188,12 @@ body {
     margin: 0;
     padding: 0;
 }
+.first-advantage-container {
+    display: flex;
+}
+.second-advantage-container {
+    display: flex;
+}
 .advantages-description {
     color: #333333;
 }
@@ -197,6 +203,7 @@ body {
 .advantages-list-item {
     background-color: rgba(131, 179, 211, 0.12);
     width: 400px;
+    height: 384px;
 }
 .blue-box {
     background-color: #83B3D3;
@@ -205,6 +212,7 @@ body {
 .includ-item {
     background-color: rgba(131, 179, 211, 0.12);
     width: 400px;
+    height: 384px;
 }
 .white-box {
     background-color: #FFFFFF;
