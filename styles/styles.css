@@ -1,3 +1,4 @@
+/* PT Sans */
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -12,12 +13,38 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 body {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    min-height: 100%;
+    margin: 0 40px;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     background-color: #FFFFFF;
     color: #000000;
+}
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+.logo-link {
+    width: 139px;
+    margin-right: 47px;
+}
+.navigation-list {
+    width: 345px;
+    margin: 0;
+    padding: 0%;
+}
+.navigation-user {
+    max-width: 264px;
+    margin: 0 auto;
 }
 .navigation-link {
     color: #000000;
@@ -82,6 +109,9 @@ body {
 }
 .navigation-list-item {
     list-style-type: none;
+}
+.main-index {
+    flex-grow: 1;
 }
 .main-promo-first {
     color: #000000;
