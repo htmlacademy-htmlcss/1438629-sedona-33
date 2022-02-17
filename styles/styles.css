@@ -151,6 +151,14 @@ body {
     color: #000000;
     text-align: center;
 }
+.advantages-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 .advantages-title,
 .includ-title {
     text-transform: uppercase;
