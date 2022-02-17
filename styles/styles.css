@@ -19,7 +19,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    width: 1200px;
     min-height: 100%;
     margin: 0 40px;
     font-family: "PT Sans", sans-serif;
@@ -44,7 +43,7 @@ body {
 }
 .navigation-user {
     max-width: 264px;
-    margin: 0 auto;
+    margin-left: auto;
 }
 .navigation-link {
     color: #000000;
