@@ -78,6 +78,8 @@ body {
 .button-search {
     font-size: 20px;
     line-height: 36px;
+    width: 575px;
+    margin: 0 auto;
 }
 .button-sort {
     color: #000000;
@@ -232,6 +234,8 @@ body {
 }
 /* Поиск отелей */
 .search-hotel {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
@@ -241,13 +245,19 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     font-weight: 700;
+    width: 720px;
+    margin: 0 auto;
 }
 .search-hotel-description {
     color: #333333;
     font-size: 22px;
     line-height: 26px;
+    width: 720px;
+    margin: 0 auto;
 }
 .mailing {
+    display: flex;
+    flex-direction: column;
     background-color: #83B3D3;
     color: #FFFFFF;
     text-align: center;
@@ -260,22 +270,55 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     font-weight: 700;
+    width: 720px;
+    margin: 0 auto;
 }
 .mailing-description {
     font-size: 22px;
     line-height: 26px;
+    width: 720px;
+    margin: 0 auto;
+}
+.mailing-form {
+    width: 800px;
+    margin: 0 auto;
 }
 /* footer */
+.hidden {
+    display: none;
+}
+.main-footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-contacts {
+    display: flex;  
+    justify-content: center;  
+}
 .social-contacts {
     list-style-type: none;
+    padding: 0;
+    width: 107px;
+}
+.phone-number {
+    width: 720px;
+    align-self: center;
+    margin: 40 auto;
 }
 .phone-link {
+    display: block;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
+}
+.htmlacademy-link {
+    display: block;
+    align-self: center;
+    width: 115px;
+    padding: 0;
     
 }
 .filter-box {
