@@ -91,6 +91,9 @@ body {
 .button-more {
     font-size: 20px;
     line-height: 26px;
+    margin: 0 auto;
+    width: 620px;
+    align-self: start;
 }
 .button-cancel {
     color: #FFFFFF;
@@ -427,14 +430,19 @@ body {
     padding: 0;
     align-self: center;
 }
+/* Карточки гостиниц */
 .appartment-card {
     width: 340px;
+    text-align: center;
 }
 .appartment-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 1056px;
 }
 .appartment-card-title {
     font-weight: bold;
@@ -453,6 +461,18 @@ body {
     border-radius: 4px;
     font-size: 16px;
 }
+/* Пагинация */
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1056px;
+}
+.pagination-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1056px;
+}
 .pagination-link {
     background-color: #83B3D3;
     color: #FFFFFF;
@@ -468,6 +488,13 @@ body {
 .amount-show {
     line-height: 23px;
     color: #333333;
+    width: 386px;
+}
+.pagination {
+    
+}
+.pagination .pagination-item {
+    display: inline;
 }
 .cataloge-mailing {
     color: #333333;
