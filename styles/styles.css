@@ -435,6 +435,9 @@ body {
     width: 340px;
     text-align: center;
 }
+.appartment-card:last-child {
+    margin-right: auto;
+}
 .appartment-list {
     display: flex;
     justify-content: space-around;
@@ -466,6 +469,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 1056px;
+    margin: 0 auto;
 }
 .pagination-pages {
     display: flex;
