@@ -337,11 +337,10 @@ body {
     color: #FFFFFF;
     background-color: #83B3D3;    
     line-height: 23px;
-   
-}
-.selection-block {
     display: flex;
+    flex-wrap: wrap;
 }
+
 .selection-form {
     display: flex;
     margin: 0 auto;
@@ -368,6 +367,8 @@ body {
     font-weight: 700;
     margin: 0;
     width: 528px;
+    margin-left: 71px;
+    margin-right: 601px;
 }
 .breadcrumbs {
     font-size: 16px;
@@ -376,6 +377,10 @@ body {
     margin: 0;
     display: inline-block;
     width: 111px;
+    margin-left: 31px;
+}
+.selection-block {
+    margin-left: 71px;
 }
 .breadcrumbs-link {
     text-decoration: none;
@@ -391,15 +396,37 @@ body {
     text-align: right;
     opacity: 0.3;
 }
+.sorting-control-container {
+    display: flex;
+    width: 1057px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
 .sorting-title {
     text-transform: uppercase;
     line-height: 39px;
     font-size: 30px;
     font-weight: bold;
+    width: 337px;
+    margin: 0;
+    margin-right: 192px;
 }
 .select-control {
     color: #333333;
     line-height: 23px;
+    align-self: center;
+    width: 287px;
+    margin: 0;
+    margin-right: 81px;
+}
+
+.sort-range-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.appartment-card {
+    width: 340px;
 }
 .appartment-list {
     display: flex;
