@@ -1,3 +1,4 @@
+/* Шрифты PT Sans */
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
@@ -12,13 +13,40 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
+html {
+    height: 100%;
+}
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     background-color: #FFFFFF;
     color: #000000;
+    margin: 0;
 }
+/* Навигация */
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+/* Логотип сайта */
+.logo-link {
+    width: 139px;
+    margin-right: 47px;
+}
+/* Навигация по страницам */
+.navigation-list {
+    width: 345px;
+    margin: 0;
+    padding: 0%;
+}
+/* Пользовательское меню */
+.navigation-user {
+    max-width: 264px;
+    margin-left: auto;
+}
+/* Ссылки в навигации */
 .navigation-link {
     color: #000000;
     text-decoration: none;
@@ -37,6 +65,7 @@ body {
     text-decoration: none;
     border-radius: 4px;
 }
+/* Кнопка "Хочу сюда" */
 .button-invite {
     font-family: inherit;
     font-size: 16px;
@@ -49,21 +78,31 @@ body {
     text-decoration: none; 
     border-radius: 4px;
 }
+/* Кнопка поиска гостинц */
 .button-search {
     font-size: 20px;
     line-height: 36px;
+    width: 575px;
+    margin: 0 auto;
 }
+/* Кнопки отображения гостинц */
 .button-sort {
     color: #000000;
     background: #FFFFFF;
 }
+/* Кнопки синего цвета */
 .button-lightblue {
     background-color: #83B3D3;
 }
+/* Кнопка "Загрузить еще" */
 .button-more {
     font-size: 20px;
     line-height: 26px;
+    margin: 0 auto;
+    width: 620px;
+    align-self: start;
 }
+/* Кнопка отмены */
 .button-cancel {
     color: #FFFFFF;
     font-size: 18px;
@@ -72,17 +111,38 @@ body {
     background:transparent;
     border: 0;
 }
+/* Добавленные в избранное */
 .favourites {
     background-color: #7DB54F;
 }
+/* Шапка */
 .page-header {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
+    width: 1200px;
+    margin: 0 auto;
 }
+/* Элементы списка навигации */
 .navigation-list-item {
     list-style-type: none;
 }
+/* Стики футер */
+.main-index {
+    flex-grow: 1;
+    margin: 0 auto;
+}
+/* Обертка контента главной страницы */
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* Приветсвенное слово */
+.welcome-logo {
+    display: block;
+    margin: 0 auto;
+}
+/* Блок приветсвенного слова */
 .main-promo-first {
     color: #000000;
     background-color: #81B3D3;
@@ -92,16 +152,23 @@ body {
     text-align: center;
     line-height: 36px;
 }
+/* О Седоне */
 .about-sedona {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    width: 720px;
+    padding: 0;
+    margin: 0 auto;
 }
+/* О причинах посещения Седоны */
 .reasons {
     color: #333333;
     font-size: 22px;
     line-height: 36px;
+    width: 720px;
+    margin: 0 auto;
 }
 /* Преимущества */
 .advantages {
@@ -109,39 +176,99 @@ body {
     color: #000000;
     text-align: center;
 }
+/* Список преимуществ */
+.advantages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.advantages-list-item:first-child {
+    flex-grow: 3;
+    height: 768px;
+}
+.advantages-list-item:nth-child(2) {
+    width: 1200px;
+}
+/* Вложенные подпреимущества в первом пункте */
+.advantages-includ {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+/* Заголовки преимуществ */
 .advantages-title,
 .includ-title {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 28px;
+    margin: 0;
 }
+/* Описание вложенных преимуществ */
 .includ-description {
     color: #333333;
+    margin: 0;
+    padding: 0;
 }
+/* Контейнер первого преимущества */
+.first-advantage-container {
+    display: flex;
+}
+/* Контейнер второго преимущества */
+.second-advantage-container {
+    display: flex;
+}
+/* Описание преимуществ */
 .advantages-description {
     color: #333333;
+    width: 250px;
+    margin: 0 auto;
+}
+/* Обертка описания преимущества №2 */
+.container-devil {
+    margin: 0 auto;
 }
 .white-description {
     color: #FFFFFF;
 }
+/* Элементы списка преимуществ */
 .advantages-list-item {
     background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
+    margin: 0 auto;
 }
+/* Синяя обертка блоков */
 .blue-box {
     background-color: #83B3D3;
     color:#FFFFFF;
+    width: 400px;
+    height: 384px;
 }
+/* Элементы вложенного списка преимуществ №1 */
 .includ-item {
     background-color: rgba(131, 179, 211, 0.12);
+    width: 400px;
+    height: 384px;
 }
+/* Белая обертка */
 .white-box {
     background-color: #FFFFFF;
 }
+/* Серая обертка */
 .dark-grey {
     background-color: rgba(131, 179, 211, 0.2);
 }
 /* Поиск отелей */
 .search-hotel {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     color: #000000;
     text-align: center;
@@ -151,13 +278,20 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     font-weight: 700;
+    width: 720px;
+    margin: 0 auto;
 }
 .search-hotel-description {
     color: #333333;
     font-size: 22px;
     line-height: 26px;
+    width: 720px;
+    margin: 0 auto;
 }
+/* Рассылка */
 .mailing {
+    display: flex;
+    flex-direction: column;
     background-color: #83B3D3;
     color: #FFFFFF;
     text-align: center;
@@ -170,24 +304,65 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     font-weight: 700;
+    width: 720px;
+    margin: 0 auto;
 }
 .mailing-description {
     font-size: 22px;
     line-height: 26px;
+    width: 720px;
+    margin: 0 auto;
+}
+.mailing-form {
+    width: 800px;
+    margin: 0 auto;
+}
+/* Сокрытие невидимых элементов, временное решение, в дальнейшем оформить через visually-hidden */
+.hidden {
+    display: none;
 }
 /* footer */
+.main-footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-contacts {
+    display: flex;  
+    justify-content: center;  
+}
 .social-contacts {
     list-style-type: none;
+    padding: 0;
+    width: 107px;
+}
+.phone-number {
+    width: 720px;
+    align-self: center;
+    margin: 40 auto;
 }
 .phone-link {
+    display: block;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
     text-decoration: none;
+}
+.htmlacademy-link {
+    display: block;
+    align-self: center;
+    width: 115px;
+    padding: 0;
     
 }
+/* Каталог стики футер*/
+.main-inner {
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 1200px;
+}
+/* Фильтр каталога гостиниц */
 .filter-box {
     background-image: url("../images/background-cataloge-filter.png");
     background-repeat: no-repeat;
@@ -195,42 +370,115 @@ body {
     color: #FFFFFF;
     background-color: #83B3D3;    
     line-height: 23px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Форма фильтра гостиниц */
+.selection-form {
+    display: flex;
+    margin: 0 auto;
+}
+.catalog-filter-group {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.infro {
+    max-width: 150px;
+    padding: 0;
+    margin: 0;
 }
 .inner-header-title {
     font-size: 60px;
     text-align: left;
     line-height: 78px;
     font-weight: 700;
+    margin: 0;
+    width: 528px;
+    margin-left: 71px;
+    margin-right: 601px;
 }
+/* Хлебные крошки */
 .breadcrumbs {
     font-size: 16px;
     line-height: 21px;
     list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    width: 111px;
+    margin-left: 31px;
 }
 .breadcrumbs-link {
     text-decoration: none;
     color: #FFFFFF;
 }
+.selection-block {
+    margin-left: 71px;
+}
 .selection-filter-group-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    width: 150px;
+    padding: 0;
 }
 .optical {
     text-align: right;
     opacity: 0.3;
+}
+/* Обертка выбора фильтров гостиниц */
+.sorting-control-container {
+    display: flex;
+    width: 1057px;
+    margin: 0 auto;
+    align-items: flex-start;
 }
 .sorting-title {
     text-transform: uppercase;
     line-height: 39px;
     font-size: 30px;
     font-weight: bold;
+    width: 337px;
+    margin: 0;
+    margin-right: 192px;
 }
 .select-control {
     color: #333333;
     line-height: 23px;
+    align-self: center;
+    width: 287px;
+    margin: 0;
+    margin-right: 81px;
 }
 
+.sort-range-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+/* Карточки гостиниц */
+.appartment-card {
+    width: 340px;
+    text-align: center;
+}
+.appartment-card:last-child {
+    margin-right: auto;
+}
+.appartment-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 1056px;
+}
 .appartment-card-title {
     font-weight: bold;
     font-size: 24px;
@@ -248,6 +496,19 @@ body {
     border-radius: 4px;
     font-size: 16px;
 }
+/* Пагинация */
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1056px;
+    margin: 0 auto;
+}
+.pagination-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1056px;
+}
 .pagination-link {
     background-color: #83B3D3;
     color: #FFFFFF;
@@ -263,7 +524,12 @@ body {
 .amount-show {
     line-height: 23px;
     color: #333333;
+    width: 386px;
 }
+.pagination .pagination-item {
+    display: inline;
+}
+/* Рассылка новостей */
 .cataloge-mailing {
     color: #333333;
     text-align: center;

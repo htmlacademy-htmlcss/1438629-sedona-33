@@ -9,11 +9,13 @@
 </head>
 
 <body>
+	<!-- Шапка страницы -->
 	<header class="page-header">
-		<a class="logo-link" href="index.html">
-			<img src="images/logo.svg" width="139" height="70" alt="Логотип Седона">
-		</a>
 		<nav class="navigation">
+			<!-- Навигация по страницам -->
+			<a class="logo-link" href="index.html">
+				<img src="images/logo.svg" width="139" height="70" alt="Логотип Седона">
+			</a>
 			<ul class="navigation-list">
 				<li class="navigation-list-item">
 					<a class="navigation-link" href="index.html">Главная</a>
@@ -25,6 +27,7 @@
 					<a class="navigation-link">Гостиницы</a>
 				</li>
 			</ul>
+			<!-- Пользовательское меню -->
 			<ul class="navigation-list navigation-user">
 				<li class="navigation-list-item">
 					<a class="navigation-link" href='#'>
@@ -47,6 +50,7 @@
 		</nav>
 	</header>
 	<main class="main-inner">
+		<!-- Блок фильтра выбора критериев гостиницы -->
 		<div class="filter-box">
 			<h1 class="inner-header-title">Гостиницы Седоны</h1>
 			<ul class="breadcrumbs">
@@ -57,10 +61,12 @@
 					<a class="breadcrumbs-link">Каталог</a>
 				</li>
 			</ul>
+			<!-- Параметры жилья -->
 			<section class="selection-block">
-				<h2 class="visually-hidden">Подбор параметров жилья</h2>
+				<h2 class="visually-hidden hidden">Подбор параметров жилья</h2>
 				<form class="selection-form" action="https://echo.htmlacademy.ru/" method="get">
-					<fieldset class="catalog-filter-group">
+					<!-- Инфраструктура -->
+					<fieldset class="catalog-filter-group infro">
 						<legend class="selection-filter-group-title">Инфраструктура:</legend>
 						<ul class="catalog-filter-list">
 							<li class="catalog-filter-item">
@@ -83,6 +89,7 @@
 							</li>
 						</ul>
 					</fieldset>
+					<!-- Тип жилья -->
 					<fieldset class="catalog-filter-group">
 						<legend class="selection-filter-group-title">Тип жилья:</legend>
 						<ul class="catalog-filter-list">
@@ -109,7 +116,8 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset class="catalog-filter-group">
+					<!-- Выбор стоимости -->
+					<fieldset class="catalog-filter-group cost">
 						<legend class="filter-cost-title">Стоимость, ₽:</legend>
 						<label class="cost-from"><span class="optical">От</span>
 							<input type="text" name="from" value="0">
@@ -119,37 +127,45 @@
 						</label>
 						<input class="control-cost" type="range" min="0" max="9000" id="range-control">
 					</fieldset>
-				<button class="button button-lightblue" type="submit">Применить</button>
-				<button class="button-cancel" type="reset">Сбросить</button>
+					<!-- Кнопки применения -->
+					<button class="button button-lightblue" type="submit">Применить</button>
+					<button class="button-cancel" type="reset">Сбросить</button>
 				</form>
 			</section>
 		</div>
+		<!-- Сортировка подобранных гостиниц -->
 		<section class="sorting-control">
-			<h2 class="visually-hidden">Гостиницы</h2>
-			<h3 class="sorting-title">Найдено гостиниц: 38</h3>
-			<select class="select-control" aria-label="Сортировка">
-				<option value="cheap">Сначала дешевое</option>
-			</select>
-			<ul class="sort-range-list">
-				<li class="sort-range-item">
-					<a href="#" class="button-sort button-title">
-						<span class="visually-hidden">Показать карточки</span>
-					</a>
-				</li>
-				<li class="sort-range-item">
-					<a href="#" class="button-sort button-slideshow">
-						<span class="visually-hidden">Показать по одному</span>
-					</a>
-				</li>
-				<li class="sort-range-item">
-					<a href="#" class="button-sort button-list">
-						<span class="visually-hidden">Показать лист</span>
-					</a>
-				</li>
-			</ul>
+			<div class="sorting-control-container">
+				<h2 class="visually-hidden hidden">Гостиницы</h2>
+				<h3 class="sorting-title">Найдено гостиниц: 38</h3>
+				<!-- Фильтр сортировки -->
+				<select class="select-control" aria-label="Сортировка">
+					<option value="cheap">Сначала дешевое</option>
+				</select>
+				<!-- Тип отображения -->
+				<ul class="sort-range-list">
+					<li class="sort-range-item">
+						<a href="#" class="button-sort button-title">
+							<span class="visually-hidden">Показать карточки</span>
+						</a>
+					</li>
+					<li class="sort-range-item">
+						<a href="#" class="button-sort button-slideshow">
+							<span class="visually-hidden">Показать по одному</span>
+						</a>
+					</li>
+					<li class="sort-range-item">
+						<a href="#" class="button-sort button-list">
+							<span class="visually-hidden">Показать лист</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Блок с карточками гостиниц -->
 			<ul class="appartment-list">
 				<li class="appartment-card">
-					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-amara.jpg" width="300" height="206" alt="Здание на скалах">
+					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-amara.jpg" width="300"
+						height="206" alt="Здание на скалах">
 					<h3 class="appartment-card-title">Amara Resort & Spa</h3>
 					<p class="appartment-card-description">Гостиница</p>
 					<p class="appartment-card-price">От 4000 Р</p>
@@ -164,7 +180,8 @@
 					<span class="raiting-point">Рейтинг: 8,5</span>
 				</li>
 				<li class="appartment-card">
-					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-desert.jpg" width="300" height="206" alt="Большой гостевой дом">
+					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-desert.jpg" width="300"
+						height="206" alt="Большой гостевой дом">
 					<h3 class="appartment-card-title">Desert Quail Inn</h3>
 					<p class="appartment-card-description">Гостиница</p>
 					<p class="appartment-card-price">От 3000 Р</p>
@@ -178,7 +195,8 @@
 					<span class="raiting-point">Рейтинг: 8,9</span>
 				</li>
 				<li class="appartment-card">
-					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-villas-diablo.jpg" width="300" height="206" alt="Вид на кафедральную гору">
+					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-villas-diablo.jpg" width="300"
+						height="206" alt="Вид на кафедральную гору">
 					<h3 class="appartment-card-title">Villas at Poco Diablo</h3>
 					<p class="appartment-card-description">Гостиница</p>
 					<p class="appartment-card-price">От 2000 Р</p>
@@ -191,7 +209,8 @@
 					<span class="raiting-point">Рейтинг: 9,2</span>
 				</li>
 				<li class="appartment-card">
-					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-greenTree.jpg" width="300" height="206" alt="Дорога серпантин">
+					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-greenTree.jpg" width="300"
+						height="206" alt="Дорога серпантин">
 					<h3 class="appartment-card-title">GreenTree Inn</h3>
 					<p class="appartment-card-description">Гостиница</p>
 					<p class="appartment-card-price">От 3000 Р</p>
@@ -204,37 +223,44 @@
 					<span class="raiting-point">Рейтинг: 9,2</span>
 				</li>
 			</ul>
-			<button class="button button-more button-lightblue" type="button">Загрузить ещё</button>
-			<h3 class="visually-hidden">Переход к последующим страницам</h3>
-			<ul class="pagination">
-				<li class="pagination-item">
-					<a class="pagination-link pagination-current">1</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">2</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">3</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">4</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link pagination-show-more" href="#">...</a>
-				</li>
-				<li class="pagination-item">
-					<a class="pagination-link" href="#">10</a>
-				</li>
-			</ul>
-			<label class="amount-show"> Гостиниц на странице
-				<select class="select-control" aria-label="Количество гостиниц на странице">
-					<!--<option value="first">1</option>
-			<option value="second">2</option>
-			<option value="third">3</option>-->
-					<option value="fourth">4</option>
-				</select>
-			</label>
+			<!-- Пагинация -->
+			<div class="pagination-container">
+				<button class="button button-more button-lightblue" type="button">Загрузить ещё</button>
+				<h3 class="visually-hidden hidden">Переход к последующим страницам</h3>
+				<div class="pagination-pages">
+					<ul class="pagination">
+						<li class="pagination-item">
+							<a class="pagination-link pagination-current">1</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link" href="#">2</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link" href="#">3</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link" href="#">4</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link pagination-show-more" href="#">...</a>
+						</li>
+						<li class="pagination-item">
+							<a class="pagination-link" href="#">10</a>
+						</li>
+					</ul>
+					<!-- Выбор количества отображения гостиниц на странице -->
+					<label class="amount-show"> Гостиниц на странице
+						<select class="select-control" aria-label="Количество гостиниц на странице">
+						<!--Расскоментировать при необходимости добавления других вариантов отличных от макета
+							<option value="first">1</option>
+							<option value="second">2</option>
+							<option value="third">3</option>-->
+							<option value="fourth">4</option>
+						</select>
+					</label>
+				</div>
 		</section>
+		<!-- Рассылка новостей -->
 		<section class="cataloge-mailing">
 			<h2 class="cataloge-mailing-title">Подпишитесь на рассылку</h2>
 			<p class="mailing-description">Только полезная информация и никакого спама,
@@ -242,41 +268,43 @@
 			</p>
 			<form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
 				<label for="newsletter-email">Email</label>
-				<input class="mailing-area" type="Email" placeholder="Ваш e-mail" name="newsletter-email" id="newsletter-email">
+				<input class="mailing-area" type="Email" placeholder="Ваш e-mail" name="newsletter-email"
+					id="newsletter-email">
 				<button class="button button-lightblue button-more" type="submit">
-				  Подписаться
+					Подписаться
 				</button>
-			  </form>
+			</form>
 		</section>
 	</main>
+	<!-- Подвал -->
 	<footer class="main-footer">
+		<!-- Ссылки на соц. сети -->
 		<section class="footer-contacts">
-		  <h2 class="visually-hidden">Контакты</h2>
-		  <ul class="social-contacts">
-			<li class="social-contacts-link">
-			  <a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
-				<span class="visually-hidden">Твиттер</span>
-			  </a>
-			</li>
-			<li class="social-contacts-link">
-			  <a class="facebook-link" href="https://www.facebook.com/htmlacademy">
-				<span class="visually-hidden">Фейсбук</span>
-			  </a>
-			</li>
-			<li class="social-contacts-link">
-			  <a class="youtube-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-				<span class="visually-hidden">Ютуб</span>
-			  </a>
-			</li>
-		  </ul>
-		  <p class="phone-number"> <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
-		  <p class="about-text">
+			<h2 class="visually-hidden hidden">Контакты</h2>
+			<ul class="social-contacts">
+				<li class="social-contacts-link">
+					<a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
+						<span class="visually-hidden">Твиттер</span>
+					</a>
+				</li>
+				<li class="social-contacts-link">
+					<a class="facebook-link" href="https://www.facebook.com/htmlacademy">
+						<span class="visually-hidden">Фейсбук</span>
+					</a>
+				</li>
+				<li class="social-contacts-link">
+					<a class="youtube-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+						<span class="visually-hidden">Ютуб</span>
+					</a>
+				</li>
+			</ul>
+			<!-- Номер телефона -->
+			<p class="phone-number"> <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
 			<a class="htmlacademy-link" href="https://htmlacademy.ru/">
-			  <img class="logo-link" src="images/htmlacademy-logo.svg" width="115" height="33" alt="Сайт HTMLAcademy">
+				<img class="logo-link" src="images/htmlacademy-logo.svg" width="115" height="33" alt="Сайт HTMLAcademy">
 			</a>
-		  </p>
 		</section>
-	  </footer>
+	</footer>
 </body>
 
 </html>
