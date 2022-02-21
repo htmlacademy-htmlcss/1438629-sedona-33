@@ -10,8 +10,10 @@
 </head>
 
 <body>
+	<!-- Шапка страницы -->
 	<header class="page-header">
 		<nav class="navigation">
+			<!-- Навигация по страницам -->
 			<a class="logo-link" href="index.html">
 				<img src="images/logo.svg" width="139" height="70" alt="Логотип Седона">
 			</a>
@@ -26,6 +28,7 @@
 					<a class="navigation-link">Гостиницы</a>
 				</li>
 			</ul>
+			<!-- Пользовательское меню -->
 			<ul class="navigation-list navigation-user">
 				<li class="navigation-list-item">
 					<a class="navigation-link" href='#'>
@@ -48,6 +51,7 @@
 		</nav>
 	</header>
 	<main class="main-inner">
+		<!-- Блок фильтра выбора критериев гостиницы -->
 		<div class="filter-box">
 			<h1 class="inner-header-title">Гостиницы Седоны</h1>
 			<ul class="breadcrumbs">
@@ -58,9 +62,11 @@
 					<a class="breadcrumbs-link">Каталог</a>
 				</li>
 			</ul>
+			<!-- Параметры жилья -->
 			<section class="selection-block">
 				<h2 class="visually-hidden hidden">Подбор параметров жилья</h2>
 				<form class="selection-form" action="https://echo.htmlacademy.ru/" method="get">
+					<!-- Инфраструктура -->
 					<fieldset class="catalog-filter-group infro">
 						<legend class="selection-filter-group-title">Инфраструктура:</legend>
 						<ul class="catalog-filter-list">
@@ -84,6 +90,7 @@
 							</li>
 						</ul>
 					</fieldset>
+					<!-- Тип жилья -->
 					<fieldset class="catalog-filter-group">
 						<legend class="selection-filter-group-title">Тип жилья:</legend>
 						<ul class="catalog-filter-list">
@@ -110,6 +117,7 @@
 							</li>
 						</ul>
 					</fieldset>
+					<!-- Выбор стоимости -->
 					<fieldset class="catalog-filter-group cost">
 						<legend class="filter-cost-title">Стоимость, ₽:</legend>
 						<label class="cost-from"><span class="optical">От</span>
@@ -120,18 +128,22 @@
 						</label>
 						<input class="control-cost" type="range" min="0" max="9000" id="range-control">
 					</fieldset>
+					<!-- Кнопки применения -->
 					<button class="button button-lightblue" type="submit">Применить</button>
 					<button class="button-cancel" type="reset">Сбросить</button>
 				</form>
 			</section>
 		</div>
+		<!-- Сортировка подобранных гостиниц -->
 		<section class="sorting-control">
 			<div class="sorting-control-container">
 				<h2 class="visually-hidden hidden">Гостиницы</h2>
 				<h3 class="sorting-title">Найдено гостиниц: 38</h3>
+				<!-- Фильтр сортировки -->
 				<select class="select-control" aria-label="Сортировка">
 					<option value="cheap">Сначала дешевое</option>
 				</select>
+				<!-- Тип отображения -->
 				<ul class="sort-range-list">
 					<li class="sort-range-item">
 						<a href="#" class="button-sort button-title">
@@ -150,6 +162,7 @@
 					</li>
 				</ul>
 			</div>
+			<!-- Блок с карточками гостиниц -->
 			<ul class="appartment-list">
 				<li class="appartment-card">
 					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-amara.jpg" width="300"
@@ -211,6 +224,7 @@
 					<span class="raiting-point">Рейтинг: 9,2</span>
 				</li>
 			</ul>
+			<!-- Пагинация -->
 			<div class="pagination-container">
 				<button class="button button-more button-lightblue" type="button">Загрузить ещё</button>
 				<h3 class="visually-hidden hidden">Переход к последующим страницам</h3>
@@ -235,16 +249,19 @@
 							<a class="pagination-link" href="#">10</a>
 						</li>
 					</ul>
+					<!-- Выбор количества отображения гостиниц на странице -->
 					<label class="amount-show"> Гостиниц на странице
 						<select class="select-control" aria-label="Количество гостиниц на странице">
-							<!--<option value="first">1</option>
-			<option value="second">2</option>
-			<option value="third">3</option>-->
+						<!--Расскоментировать при необходимости добавления других вариантов отличных от макета
+							<option value="first">1</option>
+							<option value="second">2</option>
+							<option value="third">3</option>-->
 							<option value="fourth">4</option>
 						</select>
 					</label>
 				</div>
 		</section>
+		<!-- Рассылка новостей -->
 		<section class="cataloge-mailing">
 			<h2 class="cataloge-mailing-title">Подпишитесь на рассылку</h2>
 			<p class="mailing-description">Только полезная информация и никакого спама,
@@ -262,6 +279,7 @@
 	</main>
 	<!-- Подвал -->
 	<footer class="main-footer">
+		<!-- Ссылки на соц. сети -->
 		<section class="footer-contacts">
 			<h2 class="visually-hidden hidden">Контакты</h2>
 			<ul class="social-contacts">
@@ -281,6 +299,7 @@
 					</a>
 				</li>
 			</ul>
+			<!-- Номер телефона -->
 			<p class="phone-number"> <a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
 			<a class="htmlacademy-link" href="https://htmlacademy.ru/">
 				<img class="logo-link" src="images/htmlacademy-logo.svg" width="115" height="33" alt="Сайт HTMLAcademy">
