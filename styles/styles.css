@@ -24,34 +24,60 @@ body {
     color: #000000;
     margin: 0;
 }
+/* Скрытие элементов */
+.visually-hidden { 
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 /* Навигация */
 .navigation {
     display: flex;
+    flex-wrap: wrap;
     width: 1060px;
     margin: 0 auto;
+    height: 70px;
 }
 /* Логотип сайта */
 .logo-link {
-    width: 139px;
-    margin-right: 47px;
+  margin-right: 47px;
 }
 /* Навигация по страницам */
 .navigation-list {
-    width: 345px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 345px;
+    min-height: 66px;
     margin: 0;
-    padding: 0%;
+    padding: 0;
+    align-items: center;
 }
 /* Пользовательское меню */
 .navigation-user {
     max-width: 264px;
     margin-left: auto;
 }
+.navigation-user .navigation-link {
+    min-width: 42px;
+    max-height: 37px;
+}
 /* Ссылки в навигации */
 .navigation-link {
+    display: block;
     color: #000000;
     text-decoration: none;
     text-align: center;
+    padding: 20px 17px;
 }
+.navigation-user .navigation-list-item:last-child {
+    flex-grow: 1;
+}
+
 /* кнопки */
 .button {
     font-family: inherit;
@@ -77,6 +103,8 @@ body {
     text-transform: uppercase;
     text-decoration: none; 
     border-radius: 4px;
+    padding: 8px 15px;
+    max-width: 160px;
 }
 /* Кнопка поиска гостинц */
 .button-search {
@@ -141,6 +169,9 @@ body {
 .welcome-logo {
     display: block;
     margin: 0 auto;
+    margin-bottom: 63px;
+    padding-top: 51px;
+    padding-bottom: 82px;
 }
 /* Блок приветсвенного слова */
 .main-promo-first {
@@ -159,8 +190,13 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     width: 720px;
+    min-height: 72px;
     padding: 0;
     margin: 0 auto;
+    margin-bottom: 31px;
+}
+.white-wrapper {
+    background-color: white;
 }
 /* О причинах посещения Седоны */
 .reasons {
@@ -169,6 +205,7 @@ body {
     line-height: 36px;
     width: 720px;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 /* Преимущества */
 .advantages {
