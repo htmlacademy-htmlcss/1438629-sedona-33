@@ -105,6 +105,7 @@ body {
     border-radius: 4px;
     padding: 8px 15px;
     max-width: 160px;
+    border-color: #756257;
 }
 /* Кнопка поиска гостинц */
 .button-search {
@@ -124,6 +125,7 @@ body {
 /* Кнопки синего цвета */
 .button-lightblue {
     background-color: #83B3D3;
+    border-color: #83B3D3;
 }
 /* Кнопка "Загрузить еще" */
 .button-more {
@@ -145,6 +147,7 @@ body {
 /* Добавленные в избранное */
 .favourites {
     background-color: #7DB54F;
+    border-color: #7DB54F;
 }
 /* Шапка */
 .page-header {
