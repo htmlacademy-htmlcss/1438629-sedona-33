@@ -261,6 +261,7 @@ body {
 }
 .includ-item {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     /* padding-top: 184px; */
@@ -271,8 +272,12 @@ body {
     margin: 0 auto;
     width: 250px;
     max-height: 73px;
+    padding-bottom: 79px;
 }
 .includ-title {
+    min-height: 28px;
+    max-width: 250px;
+    margin-top: 184px;
     margin-bottom: 20px;
 }
 /* Контейнер первого преимущества */
