@@ -242,7 +242,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -260,19 +259,21 @@ body {
     padding-bottom: 81px;
     
 }
+.includ-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 184px; */
+}
 /* Описание вложенных преимуществ */
 .includ-description {
     color: #333333;
     margin: 0 auto;
-    padding: 0;
-    padding-bottom: 79px;
     width: 250px;
     max-height: 73px;
-    text-align: center;
 }
 .includ-title {
-    padding-top: 184px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 /* Контейнер первого преимущества */
 .first-advantage-container {
