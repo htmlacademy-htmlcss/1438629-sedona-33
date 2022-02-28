@@ -255,8 +255,8 @@ body {
     text-align: center;
 }
 .advantages-title {
+    min-height: 56px;
     padding-top: 98px;
-    padding-bottom: 81px;
     
 }
 .includ-item {
@@ -295,6 +295,7 @@ body {
     margin: 0 auto;
     max-width: 220px;
     min-height: 63px;
+    padding-top: 81px;
 }
 /* Обертка описания преимущества №2 */
 .container-devil {
