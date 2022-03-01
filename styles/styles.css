@@ -490,8 +490,7 @@ body {
     color: #FFFFFF;
     background-color: #83B3D3;    
     line-height: 23px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     margin-bottom: 50px;
 }
 /* Форма фильтра гостиниц */
@@ -612,14 +611,23 @@ body {
 /* Карточки гостиниц */
 
 .appartment-list {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,340px);
+    gap: 18px;
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
     width: 1056px;
     margin-bottom: 64px;
+}
+.appartment-card-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.appartment-card-image {
+    display: block;
 }
 .appartment-card {
     width: 340px;
@@ -630,11 +638,13 @@ body {
     font-weight: bold;
     font-size: 24px;
     line-height: 31px;
+    margin: 0;
 }
 .appartment-card-description,
 .appartment-card-price {
     line-height: 23px;
     color: #333333;
+    margin: 0;
 }
 .raiting-point {
     text-transform: uppercase;
