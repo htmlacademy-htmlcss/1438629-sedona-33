@@ -50,6 +50,7 @@
 		</nav>
 	</header>
 	<main class="main-inner">
+		<div class="page-container">
 		<!-- Блок фильтра выбора критериев гостиницы -->
 		<div class="filter-box">
 			<h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -63,7 +64,7 @@
 			</ul>
 			<!-- Параметры жилья -->
 			<section class="selection-block">
-				<h2 class="visually-hidden hidden">Подбор параметров жилья</h2>
+				<h2 class="visually-hidden">Подбор параметров жилья</h2>
 				<form class="selection-form" action="https://echo.htmlacademy.ru/" method="get">
 					<!-- Инфраструктура -->
 					<fieldset class="catalog-filter-group infro">
@@ -136,11 +137,13 @@
 		<!-- Сортировка подобранных гостиниц -->
 		<section class="sorting-control">
 			<div class="sorting-control-container">
-				<h2 class="visually-hidden hidden">Гостиницы</h2>
+				<h2 class="visually-hidden">Гостиницы</h2>
 				<h3 class="sorting-title">Найдено гостиниц: 38</h3>
 				<!-- Фильтр сортировки -->
 				<select class="select-control" aria-label="Сортировка">
 					<option value="cheap">Сначала дешевое</option>
+					<option value="reach">Сначала дорогое</option>
+					<option value="raiting">По количеству звезд</option>
 				</select>
 				<!-- Тип отображения -->
 				<ul class="sort-range-list">
@@ -164,6 +167,7 @@
 			<!-- Блок с карточками гостиниц -->
 			<ul class="appartment-list">
 				<li class="appartment-card">
+					<div class="appartment-card-container">
 					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-amara.jpg" width="300"
 						height="206" alt="Здание на скалах">
 					<h3 class="appartment-card-title">Amara Resort & Spa</h3>
@@ -174,12 +178,11 @@
 					</a>
 					<button class="button button-lightblue">В Избранное</button>
 					<span class="icon-raiting-star"></span>
-					<span class="icon-raiting-star"></span>
-					<span class="icon-raiting-star"></span>
-					<span class="icon-raiting-star"></span>
 					<span class="raiting-point">Рейтинг: 8,5</span>
+					</div>
 				</li>
 				<li class="appartment-card">
+					<div class="appartment-card-container">
 					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-desert.jpg" width="300"
 						height="206" alt="Большой гостевой дом">
 					<h3 class="appartment-card-title">Desert Quail Inn</h3>
@@ -190,11 +193,11 @@
 					</a>
 					<button class="button button-lightblue">В Избранное</button>
 					<span class="icon-raiting-star"></span>
-					<span class="icon-raiting-star"></span>
-					<span class="icon-raiting-star"></span>
 					<span class="raiting-point">Рейтинг: 8,9</span>
+					</div>
 				</li>
 				<li class="appartment-card">
+					<div class="appartment-card-container">
 					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-villas-diablo.jpg" width="300"
 						height="206" alt="Вид на кафедральную гору">
 					<h3 class="appartment-card-title">Villas at Poco Diablo</h3>
@@ -205,10 +208,11 @@
 					</a>
 					<button class="button favourites">В Избранном</button>
 					<span class="icon-raiting-star"></span>
-					<span class="icon-raiting-star"></span>
 					<span class="raiting-point">Рейтинг: 9,2</span>
+					</div>
 				</li>
 				<li class="appartment-card">
+					<div class="appartment-card-container">
 					<img class="appartment-card-image" src="images/hotel-cataloge/hotel-greenTree.jpg" width="300"
 						height="206" alt="Дорога серпантин">
 					<h3 class="appartment-card-title">GreenTree Inn</h3>
@@ -219,14 +223,14 @@
 					</a>
 					<button class="button button-lightblue">В Избранное</button>
 					<span class="icon-raiting-star"></span>
-					<span class="icon-raiting-star"></span>
 					<span class="raiting-point">Рейтинг: 9,2</span>
+					</div>
 				</li>
 			</ul>
 			<!-- Пагинация -->
 			<div class="pagination-container">
-				<button class="button button-more button-lightblue" type="button">Загрузить ещё</button>
-				<h3 class="visually-hidden hidden">Переход к последующим страницам</h3>
+				<button class="button button-more button-lightblue pagination-button" type="button">Загрузить ещё</button>
+				<h3 class="visually-hidden">Переход к последующим страницам</h3>
 				<div class="pagination-pages">
 					<ul class="pagination">
 						<li class="pagination-item">
@@ -250,7 +254,7 @@
 					</ul>
 					<!-- Выбор количества отображения гостиниц на странице -->
 					<label class="amount-show"> Гостиниц на странице
-						<select class="select-control" aria-label="Количество гостиниц на странице">
+						<select class="amount-page" aria-label="Количество гостиниц на странице">
 						<!--Расскоментировать при необходимости добавления других вариантов отличных от макета
 							<option value="first">1</option>
 							<option value="second">2</option>
@@ -263,24 +267,25 @@
 		<!-- Рассылка новостей -->
 		<section class="cataloge-mailing">
 			<h2 class="cataloge-mailing-title">Подпишитесь на рассылку</h2>
-			<p class="mailing-description">Только полезная информация и никакого спама,
+			<p class="cataloge-mailing-description">Только полезная информация и никакого спама,
 				честное бойскаутское!
 			</p>
-			<form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-				<label for="newsletter-email">Email</label>
-				<input class="mailing-area" type="Email" placeholder="Ваш e-mail" name="newsletter-email"
+			<form class="cataloge-mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+				<label class="visually-hidden" for="newsletter-email">Email</label>
+				<input class="cataloge-mailing-area" type="Email" placeholder="Ваш e-mail" name="newsletter-email"
 					id="newsletter-email">
-				<button class="button button-lightblue button-more" type="submit">
-					Подписаться
-				</button>
+					<button class="button button-lightblue button-agree" type="submit">
+						Подписаться
+					</button>
 			</form>
 		</section>
+		</div>
 	</main>
 	<!-- Подвал -->
 	<footer class="main-footer">
 		<!-- Ссылки на соц. сети -->
 		<section class="footer-contacts">
-			<h2 class="visually-hidden hidden">Контакты</h2>
+			<h2 class="visually-hidden">Контакты</h2>
 			<ul class="social-contacts">
 				<li class="social-contacts-link">
 					<a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
