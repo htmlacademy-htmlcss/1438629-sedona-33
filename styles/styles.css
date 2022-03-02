@@ -145,7 +145,7 @@ body {
     border: 0;
 }
 /* Добавленные в избранное */
-.favourites {
+.selected {
     background-color: #7DB54F;
     border-color: #7DB54F;
 }
@@ -678,15 +678,20 @@ body {
 }
 .appartment-card-image {
     display: block;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    order: -1;
 }
+.appartment-card-image:not(:nth-child(3)) {
+    margin-right: 20px;
+}
+
 .appartment-card {
     width: 340px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .appartment-card-title {
@@ -694,19 +699,58 @@ body {
     font-size: 24px;
     line-height: 31px;
     margin: 0;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    align-self: flex-start;
 }
-.appartment-card-description,
-.appartment-card-price {
+.card-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px 20px 20px;
+}
+.appartment-card-description{
     line-height: 23px;
     color: #333333;
     margin: 0;
+    width: 133px;
+    margin-bottom: 16px;
+}
+.appartment-card-price{
+    line-height: 23px;
+    color: #333333;
+    margin: 0;
+    width: 143px;
+    margin-left: auto;
+}
+.button-card-showmore {
+    display: flex;
+    width: 133px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+.favourites {
+    display: flex;
+    width: 140px;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
 }
 .raiting-point {
     text-transform: uppercase;
     color: #333333;
-    background-color: #F2F2F2;
+    /* По макету визуально стоит чистый белый цвет, но по инспекту цвет ниже. Уточнить у Кости */
+    /* background-color: #F2F2F2; */
     border-radius: 4px;
     font-size: 16px;
+    width: 160px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 16px;
 }
 /* Пагинация */
 .pagination-container {
