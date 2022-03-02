@@ -476,7 +476,6 @@ body {
 .main-inner {
     flex-grow: 1;
     margin: 0 auto;
-    width: 1200px;
 }
 /* Фильтр каталога гостиниц */
 .filter-box {
@@ -490,7 +489,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     padding-left: 72px;
-    /* margin-bottom: 50px; */
+    margin-bottom: 44px;
 }
 /* Форма фильтра гостиниц */
 .selection-form {
@@ -651,8 +650,6 @@ body {
     font-size: 18px;
     line-height: 23px;
     margin-left: auto;
-    
-    
 }
 
 .sort-range-list {
@@ -689,6 +686,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .appartment-card-title {
