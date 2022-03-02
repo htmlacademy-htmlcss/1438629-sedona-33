@@ -554,6 +554,7 @@ body {
 .optical {
     text-align: right;
     opacity: 0.3;
+
 }
 /* Обертка выбора фильтров гостиниц */
 .sorting-control-container {
@@ -568,6 +569,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    margin-bottom: 30px;
 }
 /* Поле ввода стоимости */
 .area-cost {
