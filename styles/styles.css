@@ -687,15 +687,17 @@ body {
 }
 .appartment-card-image {
     display: block;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     order: -1;
 }
 .appartment-card {
     width: 300px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    /* Уточнить по поводу грида выше и в случае чего удалить или вернуть как было */
+    /* flex-direction: column;
+    flex-wrap: wrap; */
     padding: 20px;
+    gap: 16px;
 }
 
 .appartment-card-title {
@@ -703,12 +705,14 @@ body {
     font-size: 24px;
     line-height: 31px;
     margin: 0;
-    margin-bottom: 16px;
-    align-self: flex-start;
+    /* удалить после, при необходимости */
+    /* margin-bottom: 16px; */
+    /* align-self: flex-start; */
 }
 .card-text-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-wrap: wrap; */
     width: 300px;
 }
 .appartment-card-description{
@@ -723,7 +727,7 @@ body {
     color: #333333;
     margin: 0;
     width: 143px;
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 .button-card-showmore {
     display: flex;
@@ -739,6 +743,7 @@ body {
     height: 37px;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
 }
 .raiting-point {
     text-transform: uppercase;
