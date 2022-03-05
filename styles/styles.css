@@ -491,8 +491,11 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 72px;
+    padding: 0 72px;
     margin-bottom: 44px;
+}
+.selection-block {
+    width: 1056px;
 }
 /* Форма фильтра гостиниц */
 .selection-form {
@@ -503,7 +506,9 @@ body {
     border: 0;
     margin: 0;
     padding: 0;
-    margin-right: 81px;
+}
+.catalog-filter-group + .catalog-filter-group:not(:last-of-type) {
+    padding-right: 167px;
 }
 .catalog-filter-item:not(:last-child) {
     margin-bottom: 13px;
@@ -556,6 +561,7 @@ body {
     flex-wrap: wrap;
     min-width: 287px;
     position: relative;
+    padding-right: 81px;
 }
 .optical-from {
     text-align: right;
@@ -681,20 +687,15 @@ body {
 }
 .appartment-card-image {
     display: block;
-    margin-top: 20px;
-    margin-left: 20px;
     margin-bottom: 16px;
     order: -1;
 }
-.appartment-card-image:not(:nth-child(3)) {
-    margin-right: 20px;
-}
-
 .appartment-card {
-    width: 340px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .appartment-card-title {
@@ -702,14 +703,13 @@ body {
     font-size: 24px;
     line-height: 31px;
     margin: 0;
-    margin-left: 20px;
     margin-bottom: 16px;
     align-self: flex-start;
 }
 .card-text-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 20px 20px 20px;
+    width: 300px;
 }
 .appartment-card-description{
     line-height: 23px;
@@ -743,8 +743,7 @@ body {
 .raiting-point {
     text-transform: uppercase;
     color: #333333;
-    /* По макету визуально стоит чистый белый цвет, но по инспекту цвет ниже. Уточнить у Кости */
-    /* background-color: #F2F2F2; */
+    background-color: #F2F2F2;
     border-radius: 4px;
     font-size: 16px;
     width: 160px;
