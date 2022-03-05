@@ -65,10 +65,6 @@ body {
     max-width: 264px;
     margin-left: auto;
 }
-.navigation-user .navigation-link {
-    min-width: 42px;
-    max-height: 37px;
-}
 /* Ссылки в навигации */
 .navigation-link {
     display: block;
@@ -79,6 +75,10 @@ body {
 }
 .navigation-user .navigation-list-item:last-child {
     flex-grow: 1;
+}
+.navigation-user-item .navigation-link {
+    min-width: 42px;
+    min-height: 66px;
 }
 
 /* кнопки */
@@ -93,6 +93,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 4px;
+    border: none;
 }
 /* Кнопка "Хочу сюда" */
 .button-invite {
