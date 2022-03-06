@@ -54,8 +54,7 @@ body {
 .navigation-list {
     display: flex;
     flex-wrap: wrap;
-    min-width: 345px;
-    min-height: 66px;
+    width: 345px;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -67,6 +66,7 @@ body {
 }
 /* Ссылки в навигации */
 .navigation-link {
+    position: relative;
     display: block;
     color: #000000;
     text-decoration: none;
@@ -74,13 +74,26 @@ body {
     padding: 20px 17px;
 }
 .navigation-user .navigation-list-item:last-child {
-    flex-grow: 1;
-}
-.navigation-user-item .navigation-link {
-    min-width: 42px;
-    min-height: 66px;
+    width: 160px;
+    margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+    padding: 24px 12px;
+    min-width: 18px;
+    min-height: 18px;
+} 
+.navigation-user .navigation-list-item .button-invite {
+    padding: 8px 15px;
+}
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
 /* кнопки */
 .button {
     font-family: inherit;
@@ -94,6 +107,7 @@ body {
     text-decoration: none;
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 }
 /* Кнопка "Хочу сюда" */
 .button-invite {
@@ -120,11 +134,6 @@ body {
     margin-bottom: 93px;
     padding-top: 15px;
     padding-bottom: 15px;
-}
-/* Кнопки отображения гостинц */
-.button-sort {
-    color: #000000;
-    background: #FFFFFF;
 }
 /* Кнопки синего цвета */
 .button-lightblue {
@@ -189,9 +198,10 @@ body {
     background-color: #81B3D3;
     background-image: url("../images/index-background.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% auto; 
     text-align: center;
     line-height: 36px;
+    position: relative;
 }
 /* О Седоне */
 .about-sedona {
@@ -268,10 +278,29 @@ body {
 }
 .advantages-subitem {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     /* padding-top: 184px; */
+}
+.advantages-subitem:nth-child(1) {
+    background-image: url("/images/house.svg");
+    background-repeat: no-repeat;
+    background-size: 75px 72px;
+    background-position: center top 89px;
+}
+.advantages-subitem:nth-child(2) {
+    background-image: url("/images/food.svg");
+    background-repeat: no-repeat;
+    background-size: 74px 70px;
+    background-position: center top 89px;
+}
+.advantages-subitem:nth-child(3) {
+    background-image: url("/images/gifts.svg");
+    background-repeat: no-repeat;
+    background-size: 64px 76px;
+    background-position: center top 89px;
 }
 /* Описание вложенных преимуществ */
 .subitem-description {
@@ -287,6 +316,7 @@ body {
     margin-top: 184px;
     margin-bottom: 20px;
 }
+
 /* Контейнер первого преимущества */
 .first-advantage-container {
     display: flex;
@@ -443,16 +473,33 @@ body {
     margin: 0;
     min-width: 107px;
 }
-.social-contacts-link {
+.social-contacts-item {
     min-width: 20px;
     min-height: 20px;
 }
-.twitter-link,
-.facebook-link,
-.youtube-link {
+
+.social-link {
     display: block;
-    padding: 20px;
-    margin
+    padding: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.twitter-link {
+    background-image: url("/images/twitter.svg");
+    margin-right: 25px;
+    width: 18px; 
+    height: 15px;
+}
+.facebook-link {
+    background-image: url("/images/facebook.svg");
+    margin-right: 25px;
+    width: 10px; 
+    height: 18px; 
+}
+.youtube-link {
+    background-image: url("/images/youtube.svg");
+    width: 20px; 
+    height: 16px; 
 }
 .phone-number {
     width: 720px;
@@ -588,6 +635,7 @@ body {
 /* Обертка выбора фильтров гостиниц */
 .sorting-control-container {
     display: flex;
+    align-self: center;
     min-height: 48px;
     padding: 0;
     margin: 0;
@@ -642,8 +690,8 @@ body {
     min-width: 337px;
     margin: 0;
     padding: 0;
-    margin-left: 71px;
     margin-right: 192px;
+    margin-left: 71px;
 }
 .select-control {
     color: #333333;
@@ -654,12 +702,12 @@ body {
     min-width: 287px;
     min-height: 48px;
     margin: 0;
-    padding: 12px 127px 13px 19px;
+    padding: 12px 12px 13px 19px;
     text-align: center;
     background-color: white;
     font-size: 18px;
     line-height: 23px;
-    margin-left: auto;
+    margin-right: 81px;
 }
 
 .sort-range-list {
@@ -668,11 +716,29 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-right: 71px;
 }
 .sort-range-item {
+    position: relative;
     min-width: 48px;
     min-height: 48px;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+.sort-range-item:last-child {
+    margin-right: 0;
+}
+.title-icon,
+.slideshow-icon,
+.list-icon {
+    position: absolute;
+    padding: 16px;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+}
+/* Кнопки отображения гостинц */
+.button-sort {
+    color: #000000;
+    background: #FFFFFF;
 }
 /* Карточки гостиниц */
 
