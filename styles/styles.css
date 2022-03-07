@@ -73,8 +73,18 @@ body {
     text-align: center;
     padding: 20px 17px;
 }
-.navigation-link:hover {
+.navigation-link:hover:not(.button-invite) {
     color: #756257;
+}
+.button-invite:hover {
+    background-color: #615048;
+}
+/* Переделать на бокс шадоу */
+.button-invite:focus,
+.button-card-showmore:focus,
+.button-search:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 .navigation-link .navigation-icon:hover {
     fill: #756257;
