@@ -65,11 +65,9 @@ body {
     margin: 0;
     padding: 0;
     align-items: center;
-}
-/* Элементы списка навигации */
-.navigation-list-item {
     list-style-type: none;
 }
+/* Элементы списка навигации */
 .navigation-list-item:not(:last-child) {
     margin-right: 34px;
 }
