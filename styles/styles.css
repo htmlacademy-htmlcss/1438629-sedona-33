@@ -110,7 +110,9 @@ or: rgba(117, 98, 87, 0.3);
     padding: 33px 21px;
     position: relative;
 }
-.button-invite:hover {
+.button-invite:hover,
+.button-card-showmore:hover,
+.button-search:hover {
     background-color: #615048;
 }
 .button-invite:focus,
@@ -118,7 +120,9 @@ or: rgba(117, 98, 87, 0.3);
 .button-search:focus {
     outline: 3px solid #83B3D3;
 }
-.button-invite:active {
+.button-invite:active,
+.button-card-showmore:active,
+.button-search:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #615048;
     outline: none;
@@ -320,6 +324,8 @@ or: rgba(117, 98, 87, 0.3);
 }
 .advantages-title {
     min-height: 56px;
+    max-width: 172px;
+    margin: 0 auto;
     padding-top: 98px;
     padding-bottom: 30px;
     
@@ -485,10 +491,24 @@ or: rgba(117, 98, 87, 0.3);
     min-height: 60px;
     font-size: 18px;
     line-height: 26px;
+    border: none;
     border-radius: 10px 0px 0px 10px;
     background-color: #F2F2F2;
     padding-left: 22px;
     color: #000000;
+}
+.mailing-area:hover {
+    background-color: #E6E6E6;
+}
+.mailing-area:focus {
+    outline: 3px solid #83B3D3;
+}
+.mailing-area::placeholder {
+    opacity: 0.6;
+}
+.input-error {
+    outline: 2px solid #FF5757;
+    opacity: 0.6;
 }
 .button-agree {
     min-width: 200px;
@@ -498,7 +518,17 @@ or: rgba(117, 98, 87, 0.3);
     line-height: 26px;
     padding: 0;
 }
-
+.button-agree:hover {
+    background-color: #68A2CA;
+}
+.button-agree:focus {
+    outline: 3px solid #756257;
+}
+.button-agree:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #68A2CA;
+    outline: none;
+  }
 /* footer */
 .main-footer {
     width: 1200px;
