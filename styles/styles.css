@@ -339,19 +339,19 @@ or: rgba(117, 98, 87, 0.3);
     /* padding-top: 184px; */
 }
 .advantages-subitem:nth-child(1) {
-    background-image: url("/images/house.svg");
+    background-image: url("../images/house.svg");
     background-repeat: no-repeat;
     background-size: 75px 72px;
     background-position: center top 89px;
 }
 .advantages-subitem:nth-child(2) {
-    background-image: url("/images/food.svg");
+    background-image: url("../images/food.svg");
     background-repeat: no-repeat;
     background-size: 74px 70px;
     background-position: center top 89px;
 }
 .advantages-subitem:nth-child(3) {
-    background-image: url("/images/gifts.svg");
+    background-image: url("../images/gifts.svg");
     background-repeat: no-repeat;
     background-size: 64px 76px;
     background-position: center top 89px;
@@ -622,11 +622,13 @@ or: rgba(117, 98, 87, 0.3);
 }
 .htmlacademy-link {
     display: block;
+    color: #000000;
     width: 115px;
     height: 34px;
     padding: 0;  
 }
 .htmlacademy-link:hover {
+    
     color: #756257;
 }
 .htmlacademy-link:focus {
