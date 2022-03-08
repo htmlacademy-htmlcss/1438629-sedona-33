@@ -89,9 +89,18 @@ body {
 .navigation-link:hover:not(.button-invite) {
     color: #756257;
 }
-.navigation-link:active:not(.button-invite) {
-    border-bottom: 2px solid #756257;
+.navigation-link:active {
+    color: rgba(117, 98, 87, 0.3);
 }
+  
+/* Позже удалить, другое решение */
+/* .navigation-link:active:not(.button-invite) {
+    border-bottom: 2px solid #756257;
+} */
+/* .navigation-link:active,
+.navigation-user-link:active {
+    color: rgba(117, 98, 87, 0.3);
+  } */
 /* Пользовательское меню */
 .navigation-user {
     display: grid;
@@ -126,6 +135,9 @@ body {
 .navigation-user-link .navigation-icon:hover {
     fill: #756257;
 }
+.navigation-user-link .navigation-icon:active {
+    color: rgba(117, 98, 87, 0.3);
+  }
 .navigation-icon {
     position: absolute;
     top: 0;
@@ -226,24 +238,25 @@ body {
     width: 1200px;
     margin: 0 auto;
 }
+/* Блок приветсвенного слова */
+.welcome-logo-wrapper {
+    min-height: 485px;
+    margin-bottom: 63px;
+    background-image: url("../images/divider.svg"),
+    url("../images/index-background.png");
+    background-repeat: no-repeat,
+    no-repeat;
+    background-position: 0 429px,
+    0 0;
+    background-color: transparent;
+    background-size: contain,
+    cover;
+}
 /* Приветсвенное слово */
 .welcome-logo {
     display: block;
     margin: 0 auto;
-    margin-bottom: 63px;
     padding-top: 51px;
-    padding-bottom: 82px;
-}
-/* Блок приветсвенного слова */
-.main-promo-first {
-    color: #000000;
-    background-color: #81B3D3;
-    background-image: url("../images/index-background.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto; 
-    text-align: center;
-    line-height: 36px;
-    position: relative;
 }
 /* О Седоне */
 .about-sedona {
@@ -256,10 +269,11 @@ body {
     padding: 0;
     margin: 0 auto;
     margin-bottom: 31px;
+    text-align: center;
 }
-.white-wrapper {
+/* .white-wrapper {
     background-color: white;
-}
+} */
 /* О причинах посещения Седоны */
 .reasons {
     color: #333333;
