@@ -92,14 +92,7 @@ body {
 .navigation-link:active {
     color: rgba(117, 98, 87, 0.3);
 }
-  
-/* Позже удалить, другое решение */
-/* .navigation-link:active:not(.button-invite) {
-    border-bottom: 2px solid #756257;
-} */
-/* .navigation-link:active,
-.navigation-user-link:active {
-    color: rgba(117, 98, 87, 0.3);
+or: rgba(117, 98, 87, 0.3);
   } */
 /* Пользовательское меню */
 .navigation-user {
@@ -271,9 +264,6 @@ body {
     margin-bottom: 31px;
     text-align: center;
 }
-/* .white-wrapper {
-    background-color: white;
-} */
 /* О причинах посещения Седоны */
 .reasons {
     color: #333333;
