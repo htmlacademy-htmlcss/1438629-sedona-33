@@ -217,8 +217,6 @@ or: rgba(117, 98, 87, 0.3);
     z-index: 10;
     position: relative;
 }
-
-
 /* Стики футер */
 .main-index {
     flex-grow: 1;
@@ -290,6 +288,11 @@ or: rgba(117, 98, 87, 0.3);
     margin: 0;
     padding: 0;
 }
+.advantages-number {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+}
 .advantages-list-item:first-child {
     flex-grow: 3;
     height: 768px;
@@ -318,6 +321,7 @@ or: rgba(117, 98, 87, 0.3);
 .advantages-title {
     min-height: 56px;
     padding-top: 98px;
+    padding-bottom: 30px;
     
 }
 .advantages-subitem {
@@ -376,7 +380,6 @@ or: rgba(117, 98, 87, 0.3);
     margin: 0 auto;
     max-width: 220px;
     min-height: 63px;
-    padding-top: 81px;
 }
 /* Обертка описания преимущества №2 */
 .container-devil {
