@@ -560,21 +560,35 @@ or: rgba(117, 98, 87, 0.3);
     padding: 5px;
     background-position: center;
     background-repeat: no-repeat;
+    color: #83B3D3;
+}
+.social-link:hover {
+    color: #68A2CA;
+}
+.social-link:focus {
+    color: #68A2CA;
+    border-radius: 2px;
+    outline: 3px solid;
+    outline-offset: 10px;
+}
+.social-link:active {
+    color: #68A2CA;
+    opacity: 0.3;
 }
 .twitter-link {
-    background-image: url("/images/twitter.svg");
+    /* background-image: url("/images/twitter.svg"); */
     margin-right: 25px;
     width: 18px; 
     height: 15px;
 }
 .facebook-link {
-    background-image: url("/images/facebook.svg");
+    /* background-image: url("/images/facebook.svg"); */
     margin-right: 25px;
     width: 10px; 
     height: 18px; 
 }
 .youtube-link {
-    background-image: url("/images/youtube.svg");
+    /* background-image: url("/images/youtube.svg"); */
     width: 20px; 
     height: 16px; 
 }
@@ -593,13 +607,39 @@ or: rgba(117, 98, 87, 0.3);
     text-transform: uppercase;
     text-decoration: none;
 }
+.phone-link:hover {
+    color: #756257;
+}
+.phone-link:focus {
+    color: #756257;
+    border-radius: 2px;
+    outline: 3px solid #68A2CA ;
+    outline-offset: 10px;
+}
+.phone-link:active {
+    color: #756257;
+    opacity: 0.3;
+}
 .htmlacademy-link {
     display: block;
     width: 115px;
     height: 34px;
-    padding: 0;
-    
+    padding: 0;  
 }
+.htmlacademy-link:hover {
+    color: #756257;
+}
+.htmlacademy-link:focus {
+    color: #756257;
+    border-radius: 2px;
+    outline: 3px solid #68A2CA ;
+    outline-offset: 10px;
+}
+.htmlacademy-link:active {
+    color: #756257;
+    opacity: 0.3;
+}
+
 /* Каталог стики футер*/
 .main-inner {
     flex-grow: 1;
