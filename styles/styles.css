@@ -702,15 +702,36 @@ or: rgba(117, 98, 87, 0.3);
     padding: 0;
     margin-bottom: 45px;
 }
+.breadcrumbs-item:not(:last-child) {
+    position: relative;
+    margin-right: 17px;
+}
 .breadcrumbs-link {
     text-decoration: none;
     color: #FFFFFF;
-    margin-right: 26px;
+    padding: 0 4px;
 }
-/* .selection-block {
-    display: flex;
-   
-} */
+.breadcrumbs-item::before {
+    position: absolute;
+    display: block;
+    top: 8px;
+    left: 27px;
+    width: 5px;
+    height: 8px;
+    background-image: url("../images/nav-link.svg");
+    background-repeat: no-repeat;
+    content: "";
+}
+.breadcrumbs-link:hover {
+    opacity: 0.6;
+}
+.breadcrumbs-link:focus-within {
+    border-radius: 2px;
+    outline: 3px solid #83B3D3;
+}
+.breadcrumbs-link:active {
+    opacity: 0.3;
+}
 .selection-filter-group-title {
     font-weight: 700;
     font-size: 20px;
@@ -789,6 +810,9 @@ or: rgba(117, 98, 87, 0.3);
 .control-cost {
     width: 287px;
 }
+.control:hover {
+    opacity: 0.3;
+}
 .button-filter {
     width: 160px;
     height: 48px;
@@ -827,7 +851,16 @@ or: rgba(117, 98, 87, 0.3);
     line-height: 23px;
     margin-right: 81px;
 }
-
+.select-control:hover {
+    border: 2px solid #83B3D3;
+}
+.select-control:focus-within {
+    outline: 2px solid #83B3D3;
+}
+.select-control:active {
+    border: 2px solid #E6E6E6;
+    opacity: 0.3;
+}
 .sort-range-list {
     display: flex;
     flex-wrap: wrap;
@@ -853,11 +886,37 @@ or: rgba(117, 98, 87, 0.3);
     border: 2px solid #E6E6E6;
     border-radius: 4px;
 }
+.button-filter:hover {
+    background-color: #68A2CA;
+}
+.button-filter:active {
+    background-color: #68A2CA;
+    opacity: 0.3;
+    outline: none;
+}
+.button-filter:focus-within {
+    background-color: #68A2CA;
+    outline: 3px solid #FFFFFF;
+}
+.button-cancel:hover {
+    opacity: 0.6;
+    background: transparent;
+}
+.button-cancel:active {
+    opacity: 0.3;
+    outline: none;
+}
+.button-cancel:focus-within {
+    background-color: transparent;
+    border-radius: 4px;
+    outline: 3px solid #83B3D3;
+}
 /* Кнопки отображения гостинц */
 .button-sort {
     color: #000000;
     background: #FFFFFF;
 }
+
 /* Карточки гостиниц */
 
 .appartment-list {
