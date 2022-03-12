@@ -214,6 +214,41 @@
       </a>
     </section>
   </footer>
+  <div class="fixed-overlay modal-container-hide">
+    <div class="modal-window">
+      <button class="modal-button-close" type="button">
+        <span class="visually-hidden">Закрыть окно поиска гостиниц в Седоне</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form action="http://echo.htmlacademy.ru/" method="post">
+          <div class="modal-form">
+            <div class="modal-form-field-group">
+              <label class="date-wrapper">
+                <span class="modal-name date-arrive">Дата заезда:</span>
+                <input class="modal-input input-date" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
+              </label>  
+              <p class="inform-discription error-form">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="modal-form-field-group">
+              <label class="date-wrapper">
+                <span class="modal-name date-arrive">Дата выезда:</span>
+                <input class="modal-input input-date" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату" required>
+              </label>
+              <p class="inform-discription availible-form">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="count-guests">
+              <div class="count-wrapper count-wrapper-adult">
+                <label class="modal" for=""></label>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </section>
+
+    </div>
+  </div>
 </body>
 
 </html>
