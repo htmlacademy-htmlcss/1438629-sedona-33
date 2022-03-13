@@ -112,21 +112,18 @@ body {
     position: absolute;
     top: 15px;
     left: 22px;
-  
     display: flex;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
     width: 20px;
     height: 20px;
-  
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: normal;
     font-size: 10px;
     line-height: 13px;
     letter-spacing: -0.1em;
     color: #FFFFFF;
-  
     background-color: #7DB54F;
     border-radius: 50%;
   }
