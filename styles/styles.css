@@ -758,6 +758,54 @@ body {
     padding: 0;
     margin-bottom: 30px;
 }
+.control {
+    position: relative;
+    display: block;
+    padding-left: 39px;
+}
+.control-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.control:hover .control-mark {
+    opacity: 0.6;
+}
+.control:focus-within .control-mark {
+    opacity: 0.6;
+    outline: 3px solid #83B3D3;
+}
+.control:active .control-mark {
+    opacity: 0.3;
+}
+.control:disabled .control-mark {
+    opacity: 0.1;
+}
+.control-type {
+    border-radius: 50%;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/icon-checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/icon-radio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+  }
 .infro {
     padding-right: 67px;
  }
@@ -788,6 +836,43 @@ body {
 }
 .cost-to {
     height: 48px;
+}
+.range-scale {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #ffffff;
+}
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.range-toggle:hover {
+    background-color: #3F5E72;
+}
+.range-toggle:focus-within {
+    outline: 3px solid #83B3D3;
+}
+.range-toggle:active  {
+    outline: 2px solid #83B3D3;
+}
+.toggle-min {
+    top: -8px;
+    left: 0;
+}
+.toggle-max {
+    top: -8px;
+    right: 51px;
 }
 /* Обертка выбора фильтров гостиниц */
 .sorting-control-container {
@@ -870,6 +955,8 @@ body {
     font-size: 18px;
     line-height: 23px;
     margin-right: 81px;
+    -webkit-appearance: none;
+    appearance: none;
 }
 .select-control:hover {
     border: 2px solid #83B3D3;
