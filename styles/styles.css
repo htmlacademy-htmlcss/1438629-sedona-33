@@ -903,6 +903,9 @@ body {
     padding-left: 20px;
     height: 48px;
 }
+.area-cost {
+    -moz-appearance: textfield;
+}
 .area-cost-from {
     border-radius: 4px 0 0 4px;
 }
@@ -1249,9 +1252,8 @@ body {
 }
 .amount-page {
     margin-left: 51px;
-    max-width: 160px;
     height: 48px;
-    padding: 12px 173px 12px 17px;
+    padding: 12px 93px 12px 17px;
     background-color: white;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
