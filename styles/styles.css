@@ -213,15 +213,6 @@ body {
     width: 620px;
     align-self: start;
 }
-/* Кнопка отмены */
-.button-cancel {
-    color: #FFFFFF;
-    font-size: 18px;
-    text-align: center;
-    text-transform: inherit;
-    background:transparent;
-    border: 0;
-}
 /* Добавленные в избранное */
 .selected {
     background-color: #7DB54F;
@@ -772,7 +763,7 @@ body {
     background-color: #ffffff;
     border-radius: 4px;
 }
-.control:hover .control-mark {
+ .control:hover .control-mark {
     opacity: 0.6;
 }
 .control:focus-within .control-mark {
@@ -906,6 +897,20 @@ body {
 .area-cost {
     -moz-appearance: textfield;
 }
+.area-cost:hover {
+    opacity: 0.6;
+}
+.area-cost:focus-within {
+    box-shadow: inset 0px 0px 0px 3px #81B3D2,
+    0px 0px 0px 3px #81B3D2;
+    outline: #81B3D2;
+}
+.area-cost:disabled {
+    opacity: 0.2;
+}
+.area-cost:active {
+    background-color: #756257;
+}
 .area-cost-from {
     border-radius: 4px 0 0 4px;
 }
@@ -916,19 +921,31 @@ body {
 .control-cost {
     width: 287px;
 }
-.control:hover {
-    opacity: 0.3;
-}
 .button-filter {
-    width: 160px;
     height: 48px;
     padding:0;
     margin: 0;
     width: 160px;
 }
+.button-filter:first-child{
+    margin-bottom: 24px;
+}
+/* Кнопка отмены */
+.button-cancel {
+    width: 100px;
+    height: 23px;
+    padding-bottom: 0;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+}
 .filter-button-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     align-self: flex-end;
-    margin-right: 72px;
 }
 .sorting-title {
     text-transform: uppercase;
