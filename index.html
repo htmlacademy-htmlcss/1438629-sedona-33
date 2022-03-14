@@ -224,21 +224,21 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form action="http://echo.htmlacademy.ru/" method="post">
           <div class="modal-form">
-            <div class="modal-form-field-group">
+            <fieldset class="modal-form-field-group reset-indents">
               <label class="date-wrapper">
                 <span class="modal-name date-arrive">Дата заезда:</span>
                 <input class="modal-input input-date" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
               </label>  
               <p class="inform-discription error-form">Мы не можем отправить вас в прошлое.</p>
-            </div>
-            <div class="modal-form-field-group">
+            </fieldset>
+            <fieldset class="modal-form-field-group reset-indents">
               <label class="date-wrapper">
                 <span class="modal-name date-arrive">Дата выезда:</span>
                 <input class="modal-input input-date" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату" required>
               </label>
               <p class="inform-discription availible-form">На эти даты есть свободные номера. Пока есть.</p>
-            </div>
-            <div class="count-guests">
+            </fieldset>
+            <fieldset class="count-guests reset-indents">
               <div class="count-wrapper count-wrapper-adult">
                 <label class="modal-name" for="adult">Взрослые:</label>
                 <input class="modal-input count-input" type="number" name="adult" id="adult" min="1" max="10" value="2" required>
@@ -279,7 +279,7 @@
                   <span class="visually-hidden">Увеличить количество детей.</span>
                 </button>
               </div>
-            </div>
+            </fieldset>
             <div class="modal-button-wrapper">
               <button class="modal-button-search" type="submit">Найти</button>
             </div>
