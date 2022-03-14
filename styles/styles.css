@@ -796,10 +796,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     content: "";
-  }
+}
 .infro {
     padding-right: 67px;
- }
+}
  .cost {
     display: flex;
     flex-wrap: wrap;
@@ -1334,6 +1334,11 @@ body {
 .modal-container-hide {
     display: none;
 }
+.reset-indents {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
 .modal-window {
     position: relative;
     box-sizing: border-box;
@@ -1428,6 +1433,8 @@ body {
 }
 .input-date {
     width: 420px;
+    font-weight: 700;
+    font-family: "PT Sans", sans-serif;
     padding: 5px 34px 5px 19px;
 }
 .input-date:hover {
