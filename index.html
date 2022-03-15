@@ -46,6 +46,7 @@
             <span class="visually-hidden">
               Избранное
             </span>
+            <span class="number-favourites">12</span>
           </a>
         </li>
         <li class="navigation-user-item">
@@ -214,6 +215,81 @@
       </a>
     </section>
   </footer>
+  <div class="fixed-overlay modal-container-hide">
+    <div class="modal-window">
+      <button class="modal-button-close" type="button">
+        <span class="visually-hidden">Закрыть окно поиска гостиниц в Седоне</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form action="http://echo.htmlacademy.ru/" method="post">
+          <div class="modal-form">
+            <fieldset class="modal-form-field-group reset-indents">
+              <label class="date-wrapper">
+                <span class="modal-name date-arrive">Дата заезда:</span>
+                <input class="modal-input input-date" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
+              </label>  
+              <p class="inform-discription error-form">Мы не можем отправить вас в прошлое.</p>
+            </fieldset>
+            <fieldset class="modal-form-field-group reset-indents">
+              <label class="date-wrapper">
+                <span class="modal-name date-arrive">Дата выезда:</span>
+                <input class="modal-input input-date" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату" required>
+              </label>
+              <p class="inform-discription availible-form">На эти даты есть свободные номера. Пока есть.</p>
+            </fieldset>
+            <fieldset class="count-guests reset-indents">
+              <div class="count-wrapper count-wrapper-adult">
+                <label class="modal-name" for="adult">Взрослые:</label>
+                <input class="modal-input count-input" type="number" name="adult" id="adult" min="1" max="10" value="2" required>
+                <button class="reduce" type="button">
+                  <span class="visually-hidden">Уменьшить количество взрослых.</span>
+                </button>
+                <button class="add" type="button">
+                  <span class="visually-hidden">Добавить количество взрослых</span>
+                </button>
+              </div>
+              <div class="count-wrapper count-wrapper-children">
+                <span class="form-label">
+                  <label class="modal-name" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg  class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иконка тултипа.">
+                        <g clip-path="url(#clip0_18711_289)">
+                        <path d="M0 9H1L1 3H0L0 9Z"/>
+                        <path d="M1 0H0V1H1V0Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_18711_289">
+                        <rect width="1" height="9"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </span>
+                <input class="modal-input count-input" type="number" id="children" name="children" min="1" max="10" value="1" required>
+                <button class="reduce" type="button">
+                  <span class="visually-hidden">Уменьшить количество детей.</span>
+                </button>
+                <button class="add" type="button">
+                  <span class="visually-hidden">Увеличить количество детей.</span>
+                </button>
+              </div>
+            </fieldset>
+            <div class="modal-button-wrapper">
+              <button class="modal-button-search" type="submit">Найти</button>
+            </div>
+          </div>
+
+        </form>
+      </section>
+
+    </div>
+  </div>
 </body>
 
 </html>
