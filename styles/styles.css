@@ -161,6 +161,7 @@ body {
 }
 /* кнопки */
 .button {
+    box-sizing: border-box;
     font-family: inherit;
     font-size: 16px;
     font-weight: 700;
@@ -468,7 +469,7 @@ body {
     text-align: center;
     background-image: url("../images/mailing-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     min-height: 411px;
 }
 .mailing-title {
@@ -522,12 +523,12 @@ body {
     opacity: 0.6;
 }
 .button-agree {
-    min-width: 200px;
+    width: 200px;
     border: none;
     border-radius: 0px 10px 10px 0px;
     font-size: 20px;
     line-height: 26px;
-    padding: 0;
+    padding: 17px 20px;
 }
 .button-agree:hover {
     background-color: #68A2CA;
@@ -661,7 +662,7 @@ body {
 .filter-box {
     background-image: url("../images/background-cataloge-filter.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     color: #FFFFFF;
     background-color: #83B3D3;    
     line-height: 23px;
@@ -810,20 +811,21 @@ body {
     position: relative;
     padding-right: 81px;
 }
-.optical-from {
+.optical-from::before {
     text-align: right;
     opacity: 0.3;
     position: absolute;
     left: 112px;
     top: 12px;
-
+    content: "от";
 }
-.optical-to {
+.optical-to::before {
     text-align: right;
     opacity: 0.3;
     position: absolute;
     left: 250px;
     top: 12px;
+    content: "до";
 }
 .cost-from {
     height: 48px;
@@ -871,8 +873,6 @@ body {
 /* Обертка выбора фильтров гостиниц */
 .sorting-control-container {
     display: flex;
-    align-self: center;
-    min-height: 48px;
     padding: 0;
     margin: 0;
     align-items: center;
@@ -925,8 +925,8 @@ body {
     width: 287px;
 }
 .button-filter {
-    height: 48px;
-    padding:0;
+    box-sizing: border-box;
+    padding: 14px 35px;
     margin: 0;
     width: 160px;
 }
@@ -935,14 +935,15 @@ body {
 }
 /* Кнопка отмены */
 .button-cancel {
+    box-sizing: border-box;
     width: 100px;
-    height: 23px;
     padding-bottom: 0;
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
     background-color: transparent;
     border: none;
+    padding: 2px 4px;
 }
 .filter-button-container {
     display: flex;
@@ -963,11 +964,9 @@ body {
 }
 .select-control {
     color: #333333;
-    line-height: 23px;
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
-    min-height: 48px;
     margin: 0;
     padding: 10px 100px 11px 18px;
     text-align: center;
@@ -978,7 +977,6 @@ body {
     font-size: 18px;
     line-height: 23px;
     margin-right: 81px;
-    -webkit-appearance: none;
     appearance: none;
 }
 .select-control:hover {
@@ -1073,6 +1071,9 @@ body {
     width: 1056px;
     margin-bottom: 33px;
 }
+.card-link-image {
+    order:-1;
+}
 .card-link-image:hover {
     opacity: 0.6;
 }
@@ -1085,15 +1086,10 @@ body {
   }
 .appartment-card-image {
     display: block;
-    /* margin-bottom: 16px; */
-    order: -1;
 }
 .appartment-card {
     width: 300px;
     display: grid;
-    /* Уточнить по поводу грида выше и в случае чего удалить или вернуть как было */
-    /* flex-direction: column;
-    flex-wrap: wrap; */
     padding: 20px;
     gap: 16px;
 }
@@ -1103,14 +1099,10 @@ body {
     font-size: 24px;
     line-height: 31px;
     margin: 0;
-    /* удалить после, при необходимости */
-    /* margin-bottom: 16px; */
-    /* align-self: flex-start; */
 }
 .card-text-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* flex-wrap: wrap; */
     width: 300px;
 }
 .appartment-card-description{
@@ -1130,7 +1122,6 @@ body {
 .button-card-showmore {
     display: flex;
     width: 133px;
-    height: 37px;
     justify-content: center;
     align-items: center;
     margin-right: auto;
@@ -1138,10 +1129,10 @@ body {
 .favourites {
     display: flex;
     width: 140px;
-    height: 37px;
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    padding: 8px 10px;
 }
 .favourites:hover {
     background-color: #68A2CA;
@@ -1190,17 +1181,18 @@ body {
 }
 .raiting-point {
     text-transform: uppercase;
+    box-sizing: border-box;
     color: #333333;
     background-color: #F2F2F2;
     border-radius: 4px;
     font-size: 16px;
     width: 160px;
-    height: 37px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-top: 16px;
+    padding: 9px 20px;
 }
 /* Пагинация */
 .pagination-container {
@@ -1211,7 +1203,7 @@ body {
     border-bottom: 1px solid #E6E6E6;
 }
 .pagination-button {
-    min-height: 60px;
+    padding: 17px 0;
 }
 .pagination-button:hover {
     background-color: #68A2CA;
@@ -1228,7 +1220,6 @@ body {
 .pagination-pages {
     display: flex;
     width: 1056px;
-    height: 55px;
     margin: 0 auto;
     margin-bottom: 73px;
 }
@@ -1237,15 +1228,14 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 25px;
     font-weight: 700;
     display: block;
-    width: 55px;
-    height: 55px;
+    min-width: 55px;
     border-radius: 4px;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 .pagination-link:not(.pagination-current):hover {
@@ -1272,7 +1262,6 @@ body {
 }
 .amount-page {
     margin-left: 51px;
-    height: 48px;
     padding: 12px 93px 12px 17px;
     background-color: white;
     border: 2px solid #E6E6E6;
@@ -1293,6 +1282,8 @@ body {
 
 /* Рассылка новостей */
 .cataloge-mailing {
+    display: flex;
+    flex-direction: column;
     color: #333333;
     text-align: center;
 }
@@ -1302,9 +1293,9 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0;
+    max-width: 720px;
+    margin: 0 auto;
     margin-bottom: 46px;
-    padding: 0;
 }
 .cataloge-mailing-description {
     margin: 0 auto;
