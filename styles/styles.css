@@ -16,6 +16,7 @@
 html {
     height: 100%;
 }
+/* Обертка контента главной страницы */
 .page-container {
     width: 1200px;
     margin: 0 auto;
@@ -51,7 +52,6 @@ body {
     gap: 47px;
     width: 1060px;
     margin: 0 auto;
-    height: 70px;
 }
 /* Логотип сайта */
 .logo-link {
@@ -235,11 +235,7 @@ body {
     flex-grow: 1;
     margin: 0 auto;
 }
-/* Обертка контента главной страницы */
-.page-container {
-    width: 1200px;
-    margin: 0 auto;
-}
+
 /* Блок приветсвенного слова */
 .welcome-logo-wrapper {
     min-height: 485px;
@@ -304,11 +300,12 @@ body {
 .advantages-number {
     padding: 0;
     margin: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .advantages-list-item:first-child {
+    display: flex;
+    flex-wrap: wrap;
     flex-grow: 3;
-    height: 768px;
 }
 .advantages-list-item:nth-child(2) {
     width: 1200px;
@@ -335,8 +332,7 @@ body {
     min-height: 56px;
     max-width: 172px;
     margin: 0 auto;
-    padding-top: 98px;
-    padding-bottom: 30px;
+    margin-bottom: 28px;
     
 }
 .advantages-subitem {
@@ -391,9 +387,8 @@ body {
 /* Описание преимуществ */
 .advantages-description {
     color: #333333;
-    width: 250px;
-    margin: 0 auto;
     max-width: 220px;
+    margin: 0 auto;
     min-height: 63px;
 }
 /* Обертка описания преимущества №2 */
@@ -407,21 +402,25 @@ body {
 .advantages-list-item {
     background-color: rgba(131, 179, 211, 0.12);
     width: 400px;
-    height: 384px;
     margin: 0 auto;
+    padding-top: 98px;
+    padding-bottom: 108px;
 }
+
 /* Синяя обертка блоков */
 .blue-box {
     background-color: #83B3D3;
     color:#FFFFFF;
     width: 400px;
-    height: 384px;
+    padding-top: 98px;
+    padding-bottom: 86px;
+
 }
 /* Элементы вложенного списка преимуществ №1 */
 .advantages-subitem {
     background-color: rgba(131, 179, 211, 0.12);
     width: 400px;
-    height: 384px;
+
 }
 /* Белая обертка */
 .white-box {
@@ -430,6 +429,10 @@ body {
 /* Серая обертка */
 .dark-grey {
     background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-item-city,
+.second-advantage-container {
+    padding: 0;
 }
 /* Поиск отелей */
 .search-hotel {
