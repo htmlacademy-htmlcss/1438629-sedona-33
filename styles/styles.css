@@ -516,6 +516,9 @@ body {
 .mailing-area::placeholder {
     opacity: 0.6;
 }
+.mailing-area:disabled {
+    outline: 2px solid #FF5757;
+}
 .input-error {
     outline: 2px solid #FF5757;
     opacity: 0.6;
@@ -873,6 +876,7 @@ body {
     margin: 0 auto;
     align-items: center;
     margin-bottom: 53px;
+    margin-top: 44px;
 }
 .filter-cost-title {
     font-weight: 700;
@@ -964,8 +968,7 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     margin: 0;
-    padding: 10px 100px 11px 18px;
-    text-align: center;
+    padding: 10px 72px 11px 15px;
     background-image: url("../images/dropdown.svg");
     background-repeat: no-repeat;
     background-position: 253px center;
@@ -1060,12 +1063,12 @@ body {
 .appartment-list {
     display: grid;
     grid-template-columns: repeat(3,340px);
-    gap: 18px;
+    gap: 9px 18px;
     list-style-type: none;
     padding: 0;
     margin: 0 auto;
     width: 1056px;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
 }
 .card-link-image {
     order:-1;
@@ -1165,6 +1168,7 @@ body {
     width: 43px;
     height: 17px;
     margin: 0;
+    margin-top: 13px;
     align-self: center;
     background-image: url("../images/icon-star.svg");
     background-repeat: repeat-x;
@@ -1193,6 +1197,8 @@ body {
 /* Пагинация */
 .pagination-container {
     display: flex;
+    width: 1056px;
+    margin: 0 auto;
     margin-bottom: 29px;
     padding: 30px 0;
     border-top: 1px solid #E6E6E6;
@@ -1215,9 +1221,11 @@ body {
 }
 .pagination-pages {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 1056px;
     margin: 0 auto;
-    margin-bottom: 73px;
+    margin-bottom: 65px;
 }
 .pagination-link {
     background-color: #83B3D3;
@@ -1251,20 +1259,16 @@ body {
     background-color: #F2F2F2;
 }
 .amount-show {
+    width: 387px;
     line-height: 23px;
     color: #333333;
-    margin-left: auto;
-    align-self: center;
 }
 .amount-page {
-    margin-left: 51px;
-    padding: 12px 93px 12px 17px;
-    background-color: white;
-    border: 2px solid #E6E6E6;
-    border-radius: 4px;
-    background-image: url("../images/dropdown.svg");
-    background-repeat: no-repeat;
-     background-position: 126px center;
+    width: 160px;
+    margin-left: 47px;
+    margin-right: 0;
+    padding: 12px 93px 12px 12px;
+    background-position: 126px center;
 }
 .pagination {
     max-width: 550px;
@@ -1300,7 +1304,7 @@ body {
     margin: 0 auto;
     margin-bottom: 46px;
     padding: 0;
-    width: 720px;
+    width: 486px;
     min-height: 52px;
     font-size: 22px;
     color: #333333;
@@ -1318,7 +1322,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     display: flex;
     width: 100%;
     height: 100%;
@@ -1337,7 +1341,8 @@ body {
     box-sizing: border-box;
     width: 715px;
     margin: auto;
-    padding: 60px 70px 70px 70px;
+    padding: 70px;
+    padding-top: 60px;
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
@@ -1345,7 +1350,6 @@ body {
 .modal-button-close {
     position: absolute;
     cursor: pointer;
-    top: 54px;
     top: 54px;
     right: 70px;
     width: 53px;
@@ -1378,11 +1382,7 @@ body {
 .modal-button-close:active::before {
     opacity: 0.3;
 }
-.modal-window {
-    font-weight: 700;
-}
 .modal-title {
-    display: flex;
     margin: 0;
     margin-bottom: 60px;
     font-size: 30px;
@@ -1390,7 +1390,7 @@ body {
     text-transform: uppercase;
 }
 .modal-form-field-group {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
 }
 .date-wrapper {
     position: relative;
@@ -1410,7 +1410,9 @@ body {
 }
 .modal-name {
     font-size: 18px;
+    font-weight: 700;
     line-height: 40px;
+    align-self: center;
 }
 .modal-input {
     box-sizing: border-box;
@@ -1445,6 +1447,8 @@ body {
     margin: 0;
     margin-left: 155px;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
 }
 .error-form {
     color: #FF5757;
