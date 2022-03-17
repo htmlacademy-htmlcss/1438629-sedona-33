@@ -80,6 +80,7 @@ body {
     padding-top: 16px;
     padding-bottom: 20px;
 }
+/* Активная ссылка меню */
 .navigation-link-current {
     padding-bottom: 18px;
     border-bottom: 2px solid #756257;
@@ -108,6 +109,7 @@ body {
     padding: 33px 21px;
     position: relative;
 }
+/* Число в избранном */
 .number-favourites {
     position: absolute;
     top: 15px;
@@ -159,7 +161,7 @@ body {
     margin: auto;
     fill: #000000;
 }
-/* кнопки */
+/* Общие стили для кнопок */
 .button {
     box-sizing: border-box;
     font-family: inherit;
@@ -221,7 +223,6 @@ body {
     background-color: #7DB54F;
     border-color: #7DB54F;
 }
- 
 /* Шапка */
 .page-header {
     font-size: 20px;
@@ -238,7 +239,6 @@ body {
     flex-grow: 1;
     margin: 0 auto;
 }
-
 /* Блок приветсвенного слова */
 .welcome-logo-wrapper {
     min-height: 485px;
@@ -337,6 +337,7 @@ body {
     margin-bottom: 28px;
     
 }
+/* Вложенные элементы преимуществ */
 .advantages-subitem {
     display: flex;
     position: relative;
@@ -405,7 +406,6 @@ body {
     padding-top: 98px;
     padding-bottom: 87px;
 }
-
 /* Синяя обертка блоков */
 .blue-box {
     background-color: #83B3D3;
@@ -413,7 +413,6 @@ body {
     width: 400px;
     padding-top: 98px;
     padding-bottom: 86px;
-
 }
 /* Элементы вложенного списка преимуществ №1 */
 .advantages-subitem {
@@ -523,6 +522,7 @@ body {
     outline: 2px solid #FF5757;
     opacity: 0.6;
 }
+/* Кнопка "Хочу сюда" */
 .button-agree {
     width: 200px;
     border: none;
@@ -553,6 +553,7 @@ body {
     width: 1060px;
     margin: 0 auto;
 }
+/* Социальные сети */
 .social-contacts {
     display: flex;
     flex-wrap: wrap;
@@ -565,7 +566,6 @@ body {
 .social-contacts-item {
     min-width: 20px;
 }
-
 .social-link {
     display: block;
     padding: 2px 5px 5px 3px;
@@ -746,6 +746,7 @@ body {
     padding: 0;
     margin-bottom: 30px;
 }
+/* Чекбоксы */
 .control {
     position: relative;
     display: block;
@@ -794,9 +795,11 @@ body {
     background-position: center;
     content: "";
 }
+/* Инфраструктура */
 .infro {
     padding-right: 67px;
 }
+/* Стоимость */
  .cost {
     display: flex;
     flex-wrap: wrap;
@@ -826,6 +829,7 @@ body {
 .cost-to {
     height: 48px;
 }
+/* Рендж-слайдер */
 .range-scale {
     position: relative;
     width: 100%;
@@ -924,6 +928,15 @@ body {
 .control-cost {
     width: 287px;
 }
+/* Контейнер с кнопками фильтра */
+.filter-button-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-top: 60px;
+}
+/* Кнопка "Применить" */
 .button-filter {
     box-sizing: border-box;
     padding: 14px 35px;
@@ -944,13 +957,6 @@ body {
     background-color: transparent;
     border: none;
     padding: 2px 4px;
-}
-.filter-button-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-self: flex-start;
-    padding-top: 60px;
 }
 .sorting-title {
     text-transform: uppercase;
@@ -998,6 +1004,7 @@ body {
 .sort-range-item:not(:last-child) {
     margin-right: 8px;
 }
+/* Кнопки сортировки */
 .button-sort {
     position: relative;
     display: block;
@@ -1016,16 +1023,19 @@ body {
 .button-sort.button-sort:not(.button-sort-active):focus-within {
     border: 2px solid #83B3D3;
 }
+/* Показать "карточками" */
 .button-title {
     background-image: url("../images/sort-title.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
+/* Показать "по одному" */
 .button-slideshow {
     background-image: url("../images/sort-slideshow.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
+/* Показать "списком" */
 .button-list {
     background-image: url("../images/sort-list.svg");
     background-repeat: no-repeat;
@@ -1163,7 +1173,7 @@ body {
     color: rgba(255, 255, 255, 0.3);
     outline: none;
 }
- 
+ /* Отображение звезд рейтинга */
 .icon-raiting-star {
     width: 43px;
     height: 17px;
@@ -1179,6 +1189,7 @@ body {
 .appartment-card:nth-child(2) .icon-raiting-star {
     width: 68px;
 }
+/* Рейтинг */
 .raiting-point {
     text-transform: uppercase;
     box-sizing: border-box;
@@ -1258,6 +1269,7 @@ body {
     color: #000000;
     background-color: #F2F2F2;
 }
+/* Выпадающее меню */
 .amount-show {
     width: 387px;
     line-height: 23px;
