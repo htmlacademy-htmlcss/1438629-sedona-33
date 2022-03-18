@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="icon" href="favicon.ico">
 	<title>Седона "Каталог гостиниц"</title>
 </head>
 
@@ -32,7 +33,7 @@
 					<li class="navigation-user-item">
 						<a class="navigation-user-link" href='#'>
 							<svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18"
-								viewBox="0 0 18" xmlns="http://www.w3.org/2000/svg">
+								viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd"
 									d="M19.0257 17.05L15.3152 13.35C16.318 12.05 17.02 10.35 17.02 8.44995C17.02 4.04995 13.4098 0.449951 8.99732 0.449951C4.58483 0.449951 0.974609 4.14995 0.974609 8.54995C0.974609 12.95 4.58483 16.55 8.99732 16.55C10.8024 16.55 12.5072 15.95 13.9112 14.85L17.6217 18.55L19.0257 17.05ZM8.99732 14.55C5.68795 14.55 2.98029 11.85 2.98029 8.54995C2.98029 5.24995 5.68795 2.54995 8.99732 2.54995C12.3067 2.54995 15.0143 5.24995 15.0143 8.54995C15.0143 11.85 12.3067 14.55 8.99732 14.55Z" />
 							</svg>
@@ -93,24 +94,26 @@
 							<ul class="catalog-filter-list">
 								<li class="catalog-filter-item">
 									<label class="control" for="pool">
-										<input class="control-input visually-hidden" type="checkbox" name="pool" id="pool" checked>
+										<input class="control-input visually-hidden" type="checkbox" name="pool"
+											id="pool" checked>
 										<span class="control-mark"></span>
-                    					<span class="control-label">Бассейн</span>
+										<span class="control-label">Бассейн</span>
 									</label>
 								</li>
 								<li class="catalog-filter-item">
 									<label class="control" for="parking">
-										<input class="control-input visually-hidden" type="checkbox" name="parking" id="parking"
-											checked>
-											<span class="control-mark"></span>
-											<span class="control-label">Парковка</span>
+										<input class="control-input visually-hidden" type="checkbox" name="parking"
+											id="parking" checked>
+										<span class="control-mark"></span>
+										<span class="control-label">Парковка</span>
 									</label>
 								</li>
 								<li class="catalog-filter-item">
 									<label class="control" for="wi-fi">
-										<input class="control-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+										<input class="control-input visually-hidden" type="checkbox" name="wi-fi"
+											id="wi-fi">
 										<span class="control-mark"></span>
-                    					<span class="control-label">Wi-Fi</span>
+										<span class="control-label">Wi-Fi</span>
 									</label>
 								</li>
 							</ul>
@@ -121,24 +124,24 @@
 							<ul class="catalog-filter-list">
 								<li class="catalog-filter-item">
 									<label class="control" for="hotel">
-										<input class="control-input visually-hidden" type="radio" name="type-appartment" id="hotel"
-											checked value="hotel">
+										<input class="control-input visually-hidden" type="radio" name="type-appartment"
+											id="hotel" checked value="hotel">
 										<span class="control-mark control-type"></span>
 										<span class="control-label">Гостиница</span>
 									</label>
 								</li>
 								<li class="catalog-filter-item">
 									<label class="control" for="hostel">
-										<input class="control-input visually-hidden" type="radio" name="type-appartment" id="hostel"
-											value="hostel">
+										<input class="control-input visually-hidden" type="radio" name="type-appartment"
+											id="hostel" value="hostel">
 										<span class="control-mark control-type"></span>
 										<span class="control-label">Мотель</span>
 									</label>
 								</li>
 								<li class="catalog-filter-item">
 									<label class="control" for="apparment">
-										<input class="control-input visually-hidden" type="radio" name="type-appartment" id="apparment"
-											value="appartment">
+										<input class="control-input visually-hidden" type="radio" name="type-appartment"
+											id="apparment" value="appartment">
 										<span class="control-mark control-type"></span>
 										<span class="control-label">Апартаменты</span>
 									</label>
@@ -148,11 +151,15 @@
 						<!-- Выбор стоимости -->
 						<fieldset class="catalog-filter-group cost">
 							<legend class="filter-cost-title">Стоимость, ₽:</legend>
-							<label class="cost-from"><span class="optical-from">от</span>
-								<input class="area-cost area-cost-from" type="number" min="0" max="3000" name="from" value="0">
+							<label class="cost-from">
+								<span class="optical-from"></span>
+								<input class="area-cost area-cost-from" type="number" min="0" max="9000" name="from"
+									value="0">
 							</label>
-							<label class="cost-to"><span class="optical-to">до</span>
-								<input class="area-cost area-cost-to" type="number" min="0" max="3000" name="to" value="3000">
+							<label class="cost-to">
+								<span class="optical-to"></span>
+								<input class="area-cost area-cost-to" type="number" min="0" max="9000" name="to"
+									value="9000">
 							</label>
 							<div class="range-scale">
 								<div class="range-bar" style="left: 0; width: 227px"></div>
@@ -179,7 +186,7 @@
 					<h3 class="sorting-title">Найдено гостиниц: 38</h3>
 					<!-- Фильтр сортировки -->
 					<select class="select-control" aria-label="Сортировка">
-						<option value="cheap">Сначала дешевое</option>
+						<option value="cheap">Сначала дешёвое</option>
 						<option value="reach">Сначала дорогое</option>
 						<option value="raiting">По количеству звезд</option>
 					</select>
@@ -263,7 +270,7 @@
 						</a>
 						<div class="card-text-container">
 							<p class="appartment-card-description">Гостиница</p>
-							<p class="appartment-card-price">От 3000 Р</p>
+							<p class="appartment-card-price">От 9000 Р</p>
 							<a class="button button-card-showmore" href="#">
 								Подробнее
 							</a>
@@ -301,7 +308,7 @@
 						</li>
 					</ol>
 					<!-- Выбор количества отображения гостиниц на странице -->
-					<label class="amount-show"> Гостиниц на странице
+					<label class="amount-show"> Гостиниц на странице:
 						<select class="amount-page select-control" aria-label="Количество гостиниц на странице">
 							<option value="first">4</option>
 							<option value="second">8</option>
