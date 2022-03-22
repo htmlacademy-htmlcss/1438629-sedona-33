@@ -113,8 +113,8 @@ body {
 /* Число в избранном */
 .number-favourites {
     position: absolute;
-    top: 15px;
-    left: 22px;
+    top: 14px;
+    left: 24px;
     display: flex;
     box-sizing: border-box;
     align-items: center;
@@ -554,6 +554,7 @@ body {
 .footer-contacts {
     display: flex;
     flex-wrap: wrap;  
+    justify-content: space-between;
     align-items: center;
     width: 1060px;
     margin: 0 auto;
@@ -565,17 +566,16 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-right: 56px;
-    max-width: 140px;
 }
 .social-contacts-item {
-    min-width: 20px;
+    margin-bottom: 5px;
 }
 .social-link {
-    display: block;
-    padding: 2px 5px 5px 3px;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-right: 27px;
+    align-items: center;
+    min-width: 18px;
     color: #83B3D3;
 }
 .social-link:hover {
@@ -592,22 +592,11 @@ body {
     outline: none;
     opacity: 0.3;
 }
-.twitter-link {
-    margin-right: 20px;
-}
-.facebook-link {
-    margin-right: 22px;
-    width: 10px; 
-}
-.youtube-link {
-    width: 20px; 
-}
 .phone-number {
-    width: 720px;
     align-self: center;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-right: 53px;
+    margin-right: 22px;
 }
 .phone-link {
     display: block;
@@ -634,9 +623,7 @@ body {
 .htmlacademy-link {
     display: block;
     color: #000000;
-    width: 115px;
-    height: 34px;
-    padding: 0;  
+    padding: 0;
 }
 .htmlacademy-link:hover {
     color: #756257;
@@ -1295,7 +1282,7 @@ body {
     width: 160px;
     margin-left: 47px;
     margin-right: 0;
-    padding: 12px 93px 12px 12px;
+    padding: 15px 93px 12px 12px;
     background-position: 126px center;
 }
 .pagination {
