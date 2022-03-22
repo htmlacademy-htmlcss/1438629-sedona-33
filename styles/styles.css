@@ -986,8 +986,9 @@ body {
     border: 2px solid #E6E6E6;
     box-sizing: border-box;
     border-radius: 4px;
+    width: 287px;
     margin: 0;
-    padding: 10px 105px 11px 18px;
+    padding: 10px 78px 11px 16px;
     background-image: url("../images/dropdown.svg");
     background-repeat: no-repeat;
     background-position: 253px center;
@@ -995,7 +996,6 @@ body {
     font-family: inherit;
     font-size: 18px;
     line-height: 23px;
-    margin-right: 40px;
     -webkit-appearance: none;
     appearance: none;
 }
