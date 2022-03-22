@@ -100,6 +100,7 @@ body {
 }
 .navigation-user-item {
     position: relative;
+    margin-bottom: 5px;
 }
 .navigation-user-item:nth-child(2) {
     margin-right: 20px;
@@ -189,9 +190,10 @@ body {
     text-transform: uppercase;
     text-decoration: none; 
     border-radius: 4px;
-    padding: 8px 36px;
-    margin-top: -6px;
-    max-width: 160px;
+    padding: 9px 38px 7px 34px;
+    margin-top: -5px;
+    min-width: 160px;
+    box-sizing: border-box;
     border-color: #756257;
 }
 /* Кнопка поиска гостинц */
@@ -249,7 +251,7 @@ body {
     no-repeat;
     background-position: 0 429px,
     0 0;
-    background-color: transparent;
+    background-color: #83B3D3;
     background-size: contain,
     cover;
 }
@@ -284,6 +286,8 @@ body {
 /* Преимущества */
 .advantages-item-photo {
     display: block;
+    object-fit: cover;
+    height: auto;
 }
 .advantages {
     background-color: #FFFFFF;
@@ -361,7 +365,7 @@ body {
     background-image: url("../images/gifts.svg");
     background-repeat: no-repeat;
     background-size: 64px 76px;
-    background-position: center top 89px;
+    background-position: center top 83px;
 }
 /* Описание вложенных преимуществ */
 .subitem-description {
@@ -664,7 +668,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 41px 72px 0 71px;
+    padding: 41px 72px 0;
 }
 .selection-block {
     width: 1056px;
@@ -833,7 +837,7 @@ body {
     position: relative;
     width: 100%;
     height: 4px;
-    margin-top: 18px;
+    margin-top: 13px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 .range-bar {
@@ -871,37 +875,38 @@ body {
     top: -8px;
     right: 51px;
 }
-.sorting-contol {
-    margin-top: 44px;
+.sorting-control {
+    width: 1060px;
+    margin: 0 auto;
+    margin-top: 42px;
 }
 /* Обертка выбора фильтров гостиниц */
 .sorting-control-container {
     display: flex;
     flex-wrap: wrap;
-    width: 1060px;
     padding: 0;
-    margin: 0 auto;
     align-items: center;
     margin-bottom: 53px;
-    margin-top: 44px;
 }
 .filter-cost-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     margin-bottom: 36px;
+    padding: 0;
 }
 /* Поле ввода стоимости */
 .area-cost {
     background-color: transparent;
     color: #FFFFFF;
+    font-family: inherit;
     font-size: 18px;
     line-height: 23px;
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     width: 144px;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 17px;
     height: 48px;
 }
 .area-cost {
@@ -949,6 +954,7 @@ body {
     padding: 14px 35px;
     margin: 0;
     width: 160px;
+    font-family: inherit;
 }
 .button-filter:first-child{
     margin-bottom: 18px;
@@ -969,7 +975,7 @@ body {
     text-transform: uppercase;
     line-height: 39px;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     min-width: 337px;
     margin: 0;
     padding: 0;
@@ -981,16 +987,17 @@ body {
     box-sizing: border-box;
     border-radius: 4px;
     margin: 0;
-    padding: 10px 72px 11px 15px;
+    padding: 10px 105px 11px 18px;
     background-image: url("../images/dropdown.svg");
     background-repeat: no-repeat;
     background-position: 253px center;
     background-color: white;
+    font-family: inherit;
     font-size: 18px;
     line-height: 23px;
-    margin-right: 81px;
+    margin-right: 40px;
     -webkit-appearance: none;
-  appearance: none;
+    appearance: none;
 }
 .select-control:hover {
     border: 2px solid #83B3D3;
@@ -1007,6 +1014,7 @@ body {
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
+    margin-left: auto;
     padding: 0;
 }
 .sort-range-item:not(:last-child) {
@@ -1086,7 +1094,7 @@ body {
     padding: 0;
     margin: 0 auto;
     width: 1056px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 .card-link-image {
     order:-1;
@@ -1218,7 +1226,7 @@ body {
     display: flex;
     width: 1056px;
     margin: 0 auto;
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     padding: 30px 0;
     border-top: 1px solid #E6E6E6;
     border-bottom: 1px solid #E6E6E6;
@@ -1436,6 +1444,8 @@ body {
 }
 .modal-input {
     box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 700;
     font-size: 18px;
     line-height: 40px;
     background-color: #F2F2F2;
@@ -1547,10 +1557,6 @@ body {
     padding: 5px 32px;
     text-align: center;
 }
-/* .count-input::-webkit-outer-spin-button,
-.count-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-} */
 .count-input,
 .count-input:hover,
 .count-input:focus {
