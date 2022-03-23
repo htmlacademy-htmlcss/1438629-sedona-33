@@ -625,8 +625,8 @@ body {
     color: #000000;
     padding: 0;
 }
-.htmlacademy-link:hover {
-    color: #756257;
+.htmlacademy-link:hover path {
+    fill: #756257;
 }
 .htmlacademy-link:focus {
     color: #756257;
@@ -638,7 +638,6 @@ body {
     color: #756257;
     opacity: 0.3;
 }
-
 /* Каталог стики футер*/
 .main-inner {
     flex-grow: 1;
